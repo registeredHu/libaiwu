@@ -1,0 +1,198 @@
+.crumbs {
+  height: 55px;
+  padding-left: 20px;
+  margin: 20px 0;
+  line-height: 55px;
+  background-color: #F4F4F4;
+}
+.crumbs span,
+.crumbs a {
+  padding: 0 5px;
+  color: #666;
+}
+/*分类*/
+.classify_box {
+  width: 100%;
+  padding: 16px 0;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  display: flex;
+  -webkit-flex: flex;
+  font-size: 16px;
+  color: #666;
+}
+.cla_right {
+  display: flex;
+  -webkit-flex: flex;
+}
+.cla_right li {
+  margin: 0 26px;
+}
+.cla_right a {
+  color: #666;
+  padding: 0 10px;
+  height: 26px;
+  display: inline-block;
+}
+.cla_right .active a {
+  background: #498e3d;
+  color: #fff;
+  text-decoration: none;
+}
+.cla_right a:hover {
+  background: #498e3d;
+  color: #fff;
+  text-decoration: none;
+}
+.classify_sort a {
+  color: #666;
+  padding: 0 10px;
+  height: 26px;
+  display: inline-block;
+  border: 1px solid #e7e7e7;
+}
+.classify_sort .active a {
+  background: none;
+  color: #498e3d;
+  text-decoration: none;
+  border: 1px solid #498e3d;
+}
+.classify_sort a:hover {
+  background: none;
+  color: #498e3d;
+  text-decoration: none;
+  border: 1px solid #498e3d;
+}
+.goods .swiper-slide {
+  display: flex;
+  -webkit-flex: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.goods .swiper-slide dd {
+  width: 22%;
+  text-align: center;
+  background: #f7f5f6;
+  padding: 52px 20px 30px;
+  margin-top: 20px;
+}
+.goods .swiper-slide dd img {
+  width: 100%;
+}
+.goods .swiper-slide dd h4 {
+  color: #333;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 65px;
+}
+.goods .swiper-slide dd p {
+  font-size: 18px;
+  color: #666;
+  line-height: 18px;
+  margin: 15px 0;
+}
+.goods .swiper-slide .goods_foot {
+  display: flex;
+  -webkit-flex: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.goods .swiper-slide .goods_foot span:first-child {
+  color: #FF5757;
+  font-size: 20px;
+}
+.goods .swiper-slide .goods_foot b {
+  margin-left: 5px;
+  font-size: 16px;
+  color: #666666;
+  text-decoration: line-through;
+  font-weight: normal;
+}
+.goods .swiper-slide .index_car {
+  background: url('../images/hu_index_car.png');
+  display: inline-block;
+  border: 0;
+  width: 34px;
+  height: 30px;
+}
+/*分类 结束*/
+.page_box {
+  width: 100%;
+  display: flex;
+  -webkit-flex: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.page_div {
+  font-size: 15px;
+  font-family: "microsoft yahei";
+  color: #666666;
+  margin-right: 10px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  display: flex;
+  -webkit-flex: flex;
+  align-items: center;
+}
+#firstPage,
+#lastPage {
+  width: 50px;
+  color: #0073A9;
+}
+#prePage,
+#nextPage {
+  width: 50px;
+  height: 32px;
+  color: #0073A9;
+}
+#prePage {
+  background: #498e3d url('../images/hu_seller_pag1.png') center center no-repeat;
+  margin-right: 25px;
+}
+#nextPage {
+  background: #498e3d url('../images/hu_seller_pag2.png') center center no-repeat;
+  margin-left: 25px;
+}
+.page_div a {
+  min-width: 40px;
+  height: 32px;
+  text-align: center;
+  margin: 0 4px;
+  cursor: pointer;
+  line-height: 32px;
+  color: #666666;
+  font-size: 13px;
+  display: inline-block;
+}
+.page_div b {
+  min-width: 50px;
+  height: 32px;
+  text-align: center;
+  margin: 0 4px;
+  cursor: pointer;
+  line-height: 32px;
+  color: #666666;
+  font-size: 13px;
+  display: inline-block;
+  font-weight: normal;
+}
+.page_div .current {
+  background-color: #498e3d;
+  color: #FFFFFF;
+}
+.page_div input {
+  width: 52px;
+  height: 32px;
+  margin: 0 20px;
+  text-align: center;
+}
+.page_div button {
+  margin: 0 15px;
+  border: 0;
+  background: #f08200;
+  color: #fff;
+  font-size: 13px;
+  line-height: 32px;
+  width: 52px;
+  height: 32px;
+}

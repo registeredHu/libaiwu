@@ -1,0 +1,149 @@
+.mynews {
+  width: 1086px;
+  min-height: 679px;
+  border: 1px solid #e7e7e7;
+}
+.mynews h4 {
+  padding-left: 20px;
+  width: 100%;
+  height: 56px;
+  line-height: 65px;
+  font-size: 18px;
+  color: #323333;
+  border-bottom: 1px solid #e7e7e7;
+}
+.mynews_datail_body {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+}
+.mynews_detail_h1 {
+  color: green;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 30px;
+  font-size: 15px;
+}
+.mynews_detail_h2 {
+  color: #d3d3d3;
+  text-align: right;
+  margin-top: 20px;
+  line-height: 30px;
+  font-size: 12px;
+}
+.mynews_detail_h3 {
+  color: #808080;
+  margin-top: 20px;
+  line-height: 30px;
+  font-size: 12px;
+}
+/*意见反馈css代码*/
+.mysuggestion_body {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.suggestion_body {
+  font-size: 12px;
+  width: 100%;
+  padding: 10px;
+  height: 400px;
+  resize: none;
+}
+.suggestion_btn {
+  display: flex;
+  justify-content: center;
+}
+.suggestion_btn .suggestion_btn1 {
+  margin: 40px;
+  color: white;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #999999;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.suggestion_btn .suggestion_btn2 {
+  margin: 40px;
+  color: white;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: orange;
+  border-radius: 10px;
+  font-size: 20px;
+}
+/*意见反馈css代码结束*/
+/*我的消息css代码*/
+.mynews_body {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border: 1px solid #e7e7e7;
+  border-bottom: 0;
+}
+.mynews_h1 {
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #f2f2f2;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.mynews_h1 .mynews_h1-1 {
+  width: 350px;
+  text-align: center;
+}
+.mynews_h1 .mynews_h1-2 {
+  width: 300px;
+}
+.mynews_h1 .mynews_h1-3 {
+  width: 100px;
+}
+.mynews_h1 .mynews_h1-4 {
+  width: 100px;
+}
+.mynews_h2 {
+  font-size: 15px;
+  height: 50px;
+  line-height: 50px;
+  color: #666666;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #e7e7e7;
+}
+.mynews_h2 .mynews_h2-1 {
+  width: 350px;
+  text-align: center;
+}
+.mynews_h2 .mynews_h2-2 {
+  width: 300px;
+}
+.mynews_h2 .mynews_h2-3 {
+  width: 100px;
+}
+.mynews_h2 .mynews_h2-4 {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+}
+.mynews_h2 .mynews_h2-4 .mynews_look {
+  color: green;
+  font-size: 15px;
+  padding: 0 5px 0 5px;
+  border-right: 1px solid #e7e7e7;
+}
+.mynews_h2 .mynews_h2-4 .mynews_del {
+  font-size: 15px;
+  color: green;
+  padding: 0 5px 0 5px;
+  border-left: 1px solid #e7e7e7;
+}

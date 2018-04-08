@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>会员注册</title>
+    <link rel="stylesheet" type="text/css" href="common/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="common/css/swiper-4.1.0.min.css">
+    <link rel="stylesheet" type="text/css" href="common/css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/g_register.css">
+</head>
+<body>
+    <!-- topbar -->
+    <div class="topbar">
+        <div class="myContainer">
+            <div class="topbar_l">
+                  <div>
+                    所在城市:
+                    <!-- 按钮触发模态框 -->
+                    <button class="btn city" data-toggle="modal" data-target="#myModal">武汉</button>
+                    <!-- 模态框（Modal） -->
+                    <div class="city_m modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel">建议您的收货地址： </h4>
+                                </div>
+                                <form>
+                                    <div class="modal-body" data-toggle="distpicker">
+                                        <select class="province">
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖南</option>
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖北</option>
+                                        </select>
+                                        <span>省</span>
+                                        <select class="municipal">
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                        </select>
+                                        <span>市</span>
+                                        <select class="area">
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                        </select>
+                                        <span>区</span>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn save">保存</button>
+                                    </div>
+                                </form>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal -->
+                    </div>
+
+                    <i></i>
+                  </div>
+
+            </div>
+            <div class="topbar_r fr">
+              <ul class="fr">
+                  <li class="quit"> <a href="#">退出</a></li>
+                  <li class="order"> <a href="#">我的订单</a></li>
+                  <li class="news"> <a href="#">我的消息</a></li>
+                  <li> <a href="#">我是商家</a></li>
+                  <li class="call"> <a href="#">400-800-8820</a></li>
+              </ul>
+               <a class="tip fr" href="xiong_passwordLogin.html">登录</a>
+               <a class="tip fr" href="g_register.html">注册</a>
+            </div>
+        </div>
+    </div>
+<!-- topbar  结束-->
+
+<!-- 导航条 -->
+    <div class="myContainer">
+        <!-- 会员注册 -->
+        <div class="g_regsiter">
+            <h6></h6>
+            <a href="##">会员注册</a>
+        </div>
+    </div>
+<!-- 导航条 结束 -->
+
+    <!-- 注册和登录信息 -->
+    <div class="g_content">
+        <div class="myContainer">
+
+            <div class="g_tit">
+                <div class="g_tit_s">
+                    <h1>礼拜五会员</h1>
+                    <h2>免费注册</h2>
+                </div>
+            </div>
+
+            <!-- 登录注册表 -->
+            <div class="g_shop">
+                <!-- 输入信息栏 -->
+                <div class="g_shop_t">
+                    <input type="text" placeholder="请输入手机号"/>
+
+                    <h6><img src="images/g_shop_no_23.png">
+                    手机号码不正确，请重新输入</h6>
+
+                    <input type="password" placeholder="请输入密码（6-20位号码字符）"/>
+
+                    <input type="password" placeholder="请再次输入密码确认" />
+
+                    <h6 class="g_h61"><img src="images/g_shop_no_23.png">
+                    密码输入不正确，请重新输入</h6>
+
+                    <div class="g_codebox">
+                        <input type="text" placeholder="验证码"  class="g_code"/>
+                        <span><img src="images/g_shop_ver_27.jpg"></span>
+                        <a href="##">看不清换一张</a>
+                    </div>
+                    <h6 class="g_h62"><img src="images/g_shop_no_23.png">
+                        验证码输入不正确，请重新输入</h6>
+
+                    <div class="g_codebox2">
+                    <input type="text" placeholder="手机验证码" class="g_ph"/>
+                    <a href="##">获取验证码</a>
+                    </div>
+                    <h6 class="g_h63"><img src="images/g_shop_no_23.png">
+                    手机验证码输入不正确，请重新输入</h6>
+                </div>
+
+               <!--  协议同意栏 -->
+                <div class="g_shop_m">
+                    <input type="radio" />
+                    <span>我已阅读并同意《礼拜五用户协议</span>
+                </div>
+
+                <!-- 登录和注册按钮栏 -->
+                <div class="g_shop_b">
+                    <input type="button" value="注册"
+                    class="g_shop_b1"/>
+                    <input type="button" value="登录"
+                    class="g_shop_b2"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 页脚一 -->
+    <div class="foot1">
+        <div class="myContainer">
+            <ul class="foot1_list">
+                <li><a href="hu_firiday.html"><img src="common/images/foot1_logo1.png">优鲜保障</a></li>
+                <li><a href="#"><img src="common/images/foot1_logo2.png">全程监控</a></li>
+                <li><a href="#"><img src="common/images/foot1_logo3.png">礼拜五特惠</a></li>
+                <li><a href="#"><img src="common/images/foot1_logo4.png">基地直供</a></li>
+                <li><a href="#"><img src="common/images/foot1_logo5.png">准时送达</a></li>
+            </ul>
+        </div>
+    </div>
+<!-- 页脚一 结束
+
+<!-- 页脚二 -->
+    <div class="foot2">
+        <div class="myContainer">
+            <div class="foot2_box">
+                <div class="left">
+                    <img src="common/images/index_logo.png">
+                    <span>服务时间：08：-22:00</span>&nbsp;&nbsp;
+                    <span>400-800-8820</span>
+                </div>
+                <div class="code">
+                    <img src="common/images/foot2_code1.jpg">
+                    <p>礼拜五官方微信</p>
+                </div>
+                <div class="code">
+                    <img src="common/images/foot2_code1.jpg">
+                    <p>礼拜五官方微信</p>
+                </div>
+                <a href="xiong_about.html">
+                    <dl>
+                        <dt>关于礼拜五 </dt>
+                        <dd>新用户注册</dd>
+                        <dd>在线下单</dd>
+                        <dd>支付方式</dd>
+                    </dl>
+                </a>
+                <a href="xiong_about.html">
+                    <dl>
+                        <dt>关于礼拜五 </dt>
+                        <dd>新用户注册</dd>
+                        <dd>在线下单</dd>
+                        <dd>支付方式</dd>
+                    </dl>
+                </a>
+                <a href="xiong_about.html">
+                    <dl>
+                        <dt>关于礼拜五 </dt>
+                        <dd>新用户注册</dd>
+                        <dd>在线下单</dd>
+                        <dd>支付方式</dd>
+                    </dl>
+                </a>
+                <a href="xiong_about.html">
+                    <dl>
+                        <dt>关于礼拜五 </dt>
+                        <dd>新用户注册</dd>
+                        <dd>在线下单</dd>
+                        <dd>支付方式</dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+    </div>
+<!-- 页脚二 结束
+
+<!-- 页脚三 -->
+    <div class="myContainer">
+        <div class="foot3">
+            <p>版权所有 © 礼拜五  保留所有权利 | 沪ICP备12042163 </p>
+            <p>礼拜五  纵享品质 </p>
+        </div>
+    </div>
+<!-- 页脚三 结束 -->
+
+<script src="common/js/jquery.min.js"></script>
+<script src="common/js/swiper-4.1.0.min.js"></script>
+<script src="common/js/bootstrap.min.js"></script>
+<script src="common/js/distpicker.data.js"></script>
+<script src="common/js/myScript.js"></script>
+<script src="js/g_register.js"></script>
+</body>
+</html>

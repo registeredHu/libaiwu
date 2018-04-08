@@ -1,0 +1,422 @@
+
+body,html{
+    margin:0;
+    padding:0;
+    font-size: 12px;
+    color: #333;
+    font-family: "微软雅黑";
+   }
+   h1,h2,h3,h4,h5,h6,p,a,dl,dt,dd,ul,li,button,input,table,tr,td,th{
+    margin:0;
+    padding:0;
+   }
+   a{
+    text-decoration: none;
+    color: black;
+   }
+   a:hover{
+      text-decoration:none;
+      }
+    a:hover{
+      color:#4b943d;
+      }
+   ul li{
+    list-style: none;
+   }
+   /*清除input外边框*/
+   input:focus{
+    outline: none;
+   }
+   button:focus{
+    outline: none;
+   }
+   select:focus{
+    outline: none;
+   }
+   .myContainer{
+    width: 1280px;
+    margin:0 auto;
+   }
+   .fl{
+      float:left;
+   }
+   .fr{
+    float:right;
+   }
+   /*topbar*/
+   .topbar{
+    width:100%;
+    height: 36px;
+    line-height: 36px;
+    background: #eeeeee;
+    color:#666;
+    font-size:14px;
+   }
+   .topbar_l{
+      float: left;
+      .city{
+        background:none;
+        border:none;
+        color:#666;
+        margin: 0 5px;
+      }
+      .city:focus{
+        outline:none;
+      }
+      i{
+        display: inline-block;
+        margin: 0 5px;
+        vertical-align: middle;
+        width: 9px;
+        height: 35px;
+        background: url('../images/index_city_logo.png') no-repeat center center;
+      }
+   }
+   /*切换地址弹框*/
+   .city_m{
+      h4{
+        color: green;
+        font-size: 17px;
+        margin-top:55px;
+      }
+      .modal-dialog{
+        margin:300px auto;
+       }
+      .modal-content{
+        width: 692px;
+        height:355px;
+        background:url('../images/changeCity_bg.jpg')center center no-repeat;
+        border:5px solid #e2e2e2;
+        padding:0 55px;
+      }
+       .modal-header{
+        border:none;
+      }
+      .modal-body{
+        border:none;
+        margin-top:40px;
+      }
+      .modal-footer{
+        border:none;
+        text-align:center;
+      }
+      select{
+        width: 130px;
+        height:35px;
+        padding-left:10px;
+        option{
+          color:#333;
+          font-size:16px;
+          line-height:35px;
+        }
+      }
+      span{
+        margin:0 10px;
+      }
+      .save{
+        width: 150px;
+        height:35px;
+        background:#f08200;
+        color:#fff;
+        font-size:18px;
+        margin-top:23px;
+      }
+    }
+
+  /*切换地址弹框 结束*/
+
+   .topbar_r{
+      li{
+        float:left;
+        a{
+          color:#666;
+          padding:0 14px;
+          border-right:1px solid #999 ;
+        }
+        a:hover{
+          color:#4b943d;
+        }
+      }
+      .call{
+        background:url('../images/index_topbar_call.png')13px center no-repeat;
+        padding-left: 22px;
+      }
+      .tip{
+        color:#666;
+        margin-left:15px;
+      }
+   }
+   @media (max-width:1280px){
+      .topbar{
+        display: none;
+      }
+   }
+   /*topbar 结束*/
+
+   /*nav*/
+   .header{
+      display: flex;
+      -webkit-flex: flex;
+      height:92px;
+      margin-top:25px;
+      justify-content: space-between;
+      .logo  img{
+          vertical-align:middle;
+        }
+   }
+   .search{
+    margin-left:95px;
+    margin-top:25px;
+      .up{
+        height:40px;
+        display: flex;
+        -webkit-flex: flex;
+      }
+      .down {
+          margin-top:5px;
+          font-size:14px;
+           color:#666;
+          a{
+            color:#666;
+            padding: 0 5px;
+          }
+        }
+   }
+   .search_text{
+      width: 455px;
+      height: 36px;
+      padding: 0 10px;
+      border: solid 2px #4B943D;
+   }
+   .search_but{
+    width: 36px;
+    height:36px;
+    margin-left: -5px;
+    background: url('../images/index_search.png') no-repeat center center #4B943D;
+    border: none;
+   }
+   .header .user{
+      display: flex;
+      -webkit-flex: flex;
+      margin-top:25px;
+      a{
+      display: inline-block;
+      position: relative;
+      width: 125px;
+      height: 40px;
+      margin-left: 20px;
+      text-align: center;
+      line-height: 40px;
+      background-color: #F8F8F6;
+      border: solid 1px #E5E5E5;
+      color: #666666;
+      text-decoration:none;
+     }
+     span{
+      position:absolute;
+      top:-13px;
+      right:50%;
+      width:22px;
+      height:22px;
+      background:url('../images/index_header_num-.png')center center no-repeat;
+      color:#fff;
+      line-height:22px;
+      text-align:center;
+     }
+    }
+    .header_nav{
+      display: flex;
+      -webkit-flex: flex;
+      font-size:16px;
+      color:#323333;
+      height:50px;
+      z-index:10;
+      margin-top:20px;
+      .left{
+          span{
+            z-index: 10;
+            display:inline-block;
+            padding:0 64px 0 40px ;
+            line-height: 50px;
+            font-size: 18px;
+            background: url('../images/index_jiantou-.png') no-repeat 120px center;
+          }
+          ul{
+            display: none;
+            height: auto;
+            position: absolute;
+            background-color: #fff;
+            width: 170px;
+            z-index:9;
+            li{
+              background: #fff;
+              padding-left: 30px;
+              border: solid 1px #EFEEEC;
+              line-height: 55px;
+              img{
+                vertical-align: middle;
+                margin-right:10px;
+              }
+            }
+          }
+      }
+       .right{
+          display: flex;
+          -webkit-flex: flex;
+          li:hover{
+            background:#F08200;
+            a{
+              color:#fff;
+              border-left: solid 1px #F08200 ;
+            }
+          }
+          a{
+            color:#323333;
+            padding: 0 60px;
+            line-height: 50px;
+            border-left: solid 1px #E8E8E8;
+          }
+          .active{
+            background:#F08200;
+            a{
+              color:#fff;
+              border-left: solid 1px #F08200 ;
+            }
+          }
+       }
+
+    }
+    /*分类中详细的内容*/
+    .list_bg{
+      position: absolute;
+      width: 583px;
+      display: none;
+      height: 100%;
+      top: 0;
+      left: 170px;
+      background-color: #ebffe7;
+      padding-right: 17px;
+    }
+    .list_text{
+      display: flex;
+      -webkit-flex: flex;
+      height:auto;
+      h2{
+        font-size:18px;
+        color:#498e3d;
+        font-weight:normal;
+        padding:0 15px 0 40px;
+        flex:0 0 auto;
+        line-height:57px;
+        height:57px;
+      }
+      dl{
+        flex:1;
+        display: flex;
+        -webkit-flex: flex;
+        flex-wrap: wrap;
+      }
+      dd{
+        height:57px;
+      }
+      a{
+        padding:0 25px;
+        color:#333;
+         border-right:1px solid #585d57;
+      }
+    }
+    /*分类中详细的内容 结束*/
+   /*nav 结束*/
+
+   /*页脚一*/
+   .foot1{
+    width:100%;
+    height:70px;
+    // padding:22px 0;
+    border-bottom:1px solid #ddd;
+    border-top:1px solid #ddd;
+    margin-top:40px;
+    img{
+      vertical-align:middle;
+      margin:0 20px 0 47px;
+    }
+    a{
+      text-decoration:none;
+    }
+   }
+   .foot1_list{
+      display: flex;
+      -webkit-flex: flex;
+      justify-content: space-around;
+      line-height:70px;
+      color:#333;
+      font-size:24px;
+      font-weight:normal;
+      font-style:'宋体';
+      li{
+        border-left:1px solid #ddd;
+      }
+      li:first-child{
+        border-left:0;
+      }
+   }
+   /*页脚一 结束*/
+   /*页脚二*/
+   .foot2_box{
+      display: flex;
+    -webkit-flex: flex;
+    justify-content: space-around;
+   }
+   .foot2{
+    width:100%;
+    border-bottom:1px solid #ddd;
+    padding-bottom:17px;
+    .left{
+      width:370px;
+      font-size:18px;
+      img{
+        margin:30px 0 40px;
+      }
+      span:last-child{
+        background:url('../images/index_topbar_call.png')left center no-repeat;
+        padding-left:26px;
+        color:#f08200;
+      }
+    }
+    .code{
+      margin-top:20px;
+      color:#666;;
+      font-size:16px;
+      text-align:center;
+    }
+    dl{
+      font-size:14px;
+      color:#999;
+      line-height:26px;
+    }
+    dt{
+      font-size:16px ;
+      color:#333;
+      line-height:32px;
+      margin-top:30px;
+    }
+   }
+   /*页脚二 结束*/
+
+   /*页脚三*/
+   .foot3{
+    text-align:center;
+    height:42px;
+    padding:20px 0;
+    font-size:14px;
+    line-height:14px;
+
+    p:first-child{
+      color:#666;
+      margin-bottom:9px;
+    }
+    p:last-child{
+      color:#f08200;
+    }
+   }
+   /*页脚三 结束*/

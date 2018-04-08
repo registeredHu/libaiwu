@@ -1,0 +1,69 @@
+.carousel {
+  width: 100%;
+}
+.carousel .swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #a5a5a5;
+  background: #ffffff;
+  opacity: 1;
+}
+.carousel .swiper-pagination-bullet-active {
+  background: #4b943d;
+}
+.exchange {
+  width: 100%;
+}
+.exchange .fruit {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.exchange .fruit dl {
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 36px 20px 20px 20px;
+  border: 1px solid #ececec;
+}
+.exchange .fruit dl:nth-child(4n) {
+  margin-right: 0px;
+}
+.exchange .fruit dl dd {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.exchange .fruit dl dd h3 {
+  font-size: 18px;
+  color: #333333;
+  font-weight: normal;
+  margin-top: 25px;
+}
+.exchange .fruit dl dd p:nth-child(2) {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 17px;
+}
+.exchange .fruit dl dd p:nth-child(3) {
+  font-size: 18px;
+  color: #666666;
+  margin-top: 20px;
+}
+.exchange .fruit dl dd p:nth-child(3) i {
+  font-style: normal;
+  color: #ff5757;
+  font-size: 24px;
+  margin-right: 28px;
+}
+.exchange .fruit button {
+  border: 0;
+  background: 0;
+  width: 150px;
+  height: 36px;
+  color: #ffffff;
+  background: #f08200;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 14px;
+  margin-top: 20px;
+}

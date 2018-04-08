@@ -1,0 +1,111 @@
+/*
+* @Author: name
+* @Date:   2018-02-05 09:33:22
+* @Last Modified by:   name
+* @Last Modified time: 2018-02-09 15:50:54
+*/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: #333;
+  font-family: "微软雅黑";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+dl,
+dt,
+dd,
+ul,
+li,
+button,
+input,
+table,
+tr,
+td,
+th {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+/*清除input外边框*/
+input:focus {
+  outline: none;
+}
+button:focus {
+  outline: none;
+}
+select:focus {
+  outline: none;
+}
+.myContainer {
+  width: 1280px;
+  margin: 0 auto;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.g_joinshop{
+    width: 661px;
+    height: 315px;
+    position:fixed;
+    top:20%;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    background:white;
+    overflow: hidden;
+}
+.g_suc{
+    width:253px;
+    height:40px;
+    background:url('../images/g_suc_09.png') 0 center no-repeat;
+    font-size:24px;
+    color:#666666;
+    text-align: right;
+    line-height:40px;
+    margin:0 auto;
+    margin-top:90px;
+}
+.g_return{
+    width:440px;
+    height:45px;
+    display: flex;
+    justify-content:space-between;
+    margin: 0 auto;
+    margin-top:67px;
+}
+.g_return a{
+    display:line-block;
+    width:170px;
+    height:44px;
+    text-align:center;
+    line-height:44px;
+    color:white;
+     margin:0 auto;
+}
+.g_return a:nth-child(1){
+    background:#f08200;
+}
+.g_return a:nth-child(2){
+    background:#498e3d;
+}

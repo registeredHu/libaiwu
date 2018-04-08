@@ -1,0 +1,217 @@
+.crumbs{
+    height: 55px;
+    padding-left: 20px;
+    margin: 20px 0;
+    line-height: 55px;
+    background-color: #F4F4F4;
+    span,a{
+        padding: 0 5px;
+        color: #666;
+    }
+}
+/*分类*/
+.classify_box{
+    width: 100%;
+    padding:16px 0;
+    border-top:1px solid #e7e7e7;
+    border-bottom:1px solid #e7e7e7;
+    display: flex;
+    -webkit-flex: flex;
+    font-size:16px;
+    color:#666;
+}
+.cla_right{
+    display: flex;
+    -webkit-flex: flex;
+    li{
+        margin:0 26px;
+    }
+    a{
+        color:#666;
+        padding:0 10px;
+        height:26px;
+        display:inline-block;
+    }
+    .active a{
+        background:#498e3d;
+        color:#fff;
+        text-decoration: none;
+    }
+    a:hover{
+        background:#498e3d;
+        color:#fff;
+        text-decoration: none;
+    }
+}
+.classify_sort{
+    a{
+        color:#666;
+        padding:0 10px;
+        height:26px;
+        display:inline-block;
+        border:1px solid #e7e7e7;
+    }
+    .active a{
+        background:none;
+        color:#498e3d;
+        text-decoration: none;
+        border:1px solid #498e3d;
+    }
+    a:hover{
+        background:none;
+        color:#498e3d;
+        text-decoration: none;
+        border:1px solid #498e3d;
+    }
+}
+
+.goods .swiper-slide{
+    display: flex;
+    -webkit-flex: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    dd{
+        width: 22%;
+        text-align:center;
+        background:#f7f5f6;
+        padding:52px 20px 30px;
+        margin-top:20px;
+        img{
+            width: 100%;
+        }
+        h4{
+            color:#333;
+            font-size:18px;
+            font-weight:normal;
+            margin-top:65px;
+        }
+        p{
+            font-size:18px;
+            color:#666;
+            line-height:18px;
+            margin:15px 0;
+        }
+    }
+    .goods_foot{
+        display: flex;
+        -webkit-flex: flex;
+        justify-content:space-between;
+        align-items: center;
+            span:first-child{
+                color: #FF5757;
+                font-size: 20px;
+            }
+            b{
+                margin-left: 5px;
+                font-size: 16px;
+                color: #666666;
+                text-decoration: line-through;
+                font-weight:normal;
+            }
+        }
+    .index_car{
+        background:url('../images/hu_index_car.png');
+        display:inline-block;
+        width: 34px;
+        height:30px;
+    }
+}
+/*分类 结束*/
+.page_box{
+    width: 100%;
+    display: flex;
+    -webkit-flex: flex;
+    justify-content:center;
+    margin:20px 0;
+}
+.page_div{
+    font-size: 15px;
+    font-family: "microsoft yahei";
+    color: #666666;
+    margin-right: 10px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-flex: flex;
+    align-items: center;
+}
+#firstPage, #lastPage{
+    width: 50px;
+    color: #0073A9;
+}
+#prePage, #nextPage{
+    width: 50px;
+    height:32px;
+    color: #0073A9;
+}
+#prePage{
+    background:#498e3d url('../images/hu_seller_pag1.png')center center no-repeat;
+    margin-right:25px;
+}
+#nextPage{
+    background:#498e3d url('../images/hu_seller_pag2.png')center center no-repeat;
+    margin-left:25px;
+}
+.page_div a{
+    min-width:40px;
+    height: 32px;
+    text-align: center;
+    margin: 0 4px;
+    cursor: pointer;
+    line-height: 32px;
+    color: #666666;
+    font-size: 13px;
+    display: inline-block;
+}
+.page_div b{
+    min-width: 50px;
+    height: 32px;
+    text-align: center;
+    margin: 0 4px;
+    cursor: pointer;
+    line-height: 32px;
+    color: #666666;
+    font-size: 13px;
+    display: inline-block;
+    font-weight:normal;
+}
+.page_div .current{
+    background-color: #498e3d;
+    color: #FFFFFF;
+}
+.page_div input{
+    width: 52px;
+    height:32px;
+    margin:0 20px;
+    text-align:center;
+}
+.page_div button{
+    margin:0 15px;
+    border:0;
+    background:#f08200;
+    color:#fff;
+    font-size:13px;
+    line-height:32px;
+    width: 52px;
+    height:32px;
+}
+.banner_pag .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  border-radius: 0;
+  border:1px solid #9b9b9b;
+  border-radius:50%;
+  background: #fff;
+  opacity:1;
+}
+.banner_pag .swiper-pagination-bullet-active {
+  background: #4b943d;
+}
+.sub_banner{
+    width: 100%;
+    display: flex;
+    -webkit-flex: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:20px 0;
+}

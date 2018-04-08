@@ -1,0 +1,92 @@
+/*
+* @Author: name
+* @Date:   2018-02-07 15:47:00
+* @Last Modified by:   name
+* @Last Modified time: 2018-02-07 16:01:08
+*/
+.myOrder{
+    position: relative;
+    width: 1086px;
+    height: 680px;
+    padding-bottom: 40px;
+    border: 1px solid #e7e7e7e7;
+}
+.myOrder h4{
+    padding: 0 20px;
+    width: 100%;
+    height: 56px;
+    line-height: 65px;
+    font-size: 14px;
+    color: #323333;
+    border-bottom: 1px solid #e7e7e7e7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.orderAll{
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+    height: 68px;
+    align-items: center;
+    color: #666666;
+}
+.orderAll li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.orderAll li a{
+    text-decoration: normal;
+    cursor: pointer;
+    padding: 0 14px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 4px;
+    // color: #666666;
+}
+.orderAll .fixed a{
+    background: #f08200;
+    color: #ffffff;
+}
+.orderAll .recycle{
+    margin-left: 50px;
+    color: #4b943d;
+}
+.orderAll .line{
+    display: block;
+    width: 2px;
+    height: 18px;
+    background: #bfbfbf;
+    margin: 0 35px;
+}
+.myOrder .orderNull{
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.myOrder .orderNull p{
+    margin-left: 40px;
+    color: #666666;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.myOrder .orderNull p span:nth-child(2){
+    font-size: 14px;
+    width: 170px;
+    height: 45px;
+    background: #f08200;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 4px;
+    display: block;
+    color: #ffffff;
+    margin-top: 30px;
+}

@@ -1,0 +1,211 @@
+.clear {
+  clear: both;
+}
+.perphone {
+  width: 1085px;
+  height: 678px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+.perphone h3 {
+  width: 100%;
+  padding-left: 20px;
+  line-height: 58px;
+  font-size: 18px;
+  color: #333;
+  font-weight: normal;
+  border-bottom: 1px solid #e7e7e7;
+}
+.perphone .perphonebox {
+  width: 960px;
+  height: 430px;
+  margin: 40px auto auto 40px;
+}
+.perphone .perphonebox span.hpactive1 {
+  float: left;
+  width: 248px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 40px;
+  background: url('../images/biaoqian_1-1.png') center center no-repeat;
+}
+.perphone .perphonebox .clear {
+  clear: both;
+}
+.perphone .perphonebox .perphone {
+  width: 1085px;
+  height: 678px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+.perphone .perphonebox .perphone h3 {
+  width: 100%;
+  padding-left: 20px;
+  line-height: 58px;
+  font-size: 18px;
+  color: #333;
+  font-weight: normal;
+  border-bottom: 1px solid #e7e7e7;
+}
+.perphone .perphonebox .perphone .perphonebox {
+  width: 960px;
+  height: 430px;
+  margin: 40px auto auto 40px;
+}
+.perphone .perphonebox .perphone .perphonebox span.hpactive1 {
+  float: left;
+  width: 248px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 40px;
+  background: url('../images/biaoqian_1-1.png') center center no-repeat;
+}
+.perphone .perphonebox .perphone .perphonebox span.hpactive2 {
+  float: left;
+  width: 248px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 40px;
+  background: url('../images/biaoqian_2-2.png') center center no-repeat;
+}
+.perphone .perphonebox .perphone .perphonebox span.hpactive3 {
+  float: left;
+  width: 248px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 40px;
+  background: url('../images/biaoqian_3-2.png') center center no-repeat;
+}
+.perphone .perphonebox .pephoneboxl3 {
+  width: 100%;
+  height: 485px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.perphone .perphonebox .pephoneboxl3 span {
+  width: 250px;
+  height: 42px;
+  display: block;
+  background: url('../images/payok_con1.png') 0 center no-repeat;
+  background-size: 42px 42px;
+  font-size: 24px;
+  color: #ec6a17;
+  line-height: 42px;
+  padding-left: 70px;
+}
+.perphone .perphonebox a.personp {
+  width: 150px;
+  height: 50px;
+  background: #f08200;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  line-height: 50px;
+  border-radius: 4px;
+  margin-top: 40px;
+}
+.perphone .perphonebox span.hpactive2 {
+  float: left;
+  width: 248px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 40px;
+  background: url('../images/biaoqian_2-2.png') center center no-repeat;
+}
+.perphone .perphonebox span.hpactive3 {
+  float: left;
+  width: 248px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 40px;
+  background: url('../images/biaoqian_3-2.png') center center no-repeat;
+}
+.pephoneboxl {
+  width: 307px;
+  height: 282px;
+}
+.pephoneboxl input[type='text'] {
+  width: 100%;
+  height: 44px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  color: #999;
+  font-size: 16px;
+  padding-left: 11px;
+  margin-bottom: 30px;
+  background-size: 12px 12px !important;
+}
+.pephoneboxl span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 44px;
+  margin-bottom: 30px;
+}
+.pephoneboxl span input[type='text'].peyz {
+  width: 113px;
+  height: 44px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+.pephoneboxl span input[type='text'].sjy {
+  margin-bottom: 0;
+}
+.pephoneboxl span img {
+  float: left;
+  width: 78px;
+  margin-right: 10px;
+}
+.pephoneboxl span a.prlook {
+  float: left;
+  font-size: 14px;
+  color: #ea5b0c;
+  text-decoration: none;
+}
+.pephoneboxl a.perbd {
+  display: block;
+  width: 150px;
+  height: 50px;
+  background: #f08200;
+  border-radius: 4px;
+  font-size: 20px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  margin-top: 40px;
+}
+a.personp {
+  width: 150px;
+  height: 50px;
+  background: #f08200;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  line-height: 50px;
+  border-radius: 4px;
+  margin-top: 40px;
+}

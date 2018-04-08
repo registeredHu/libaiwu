@@ -1,0 +1,211 @@
+/*
+* @Author: name
+* @Date:   2018-02-07 09:36:55
+* @Last Modified by:   name
+* @Last Modified time: 2018-02-07 11:47:48
+*/
+.integrayOrder{
+    width: 1086px;
+    height: 100%;
+    padding-bottom: 40px;
+    border: 1px solid #e7e7e7e7;
+}
+.integrayOrder h4{
+    padding: 0 20px;
+    width: 100%;
+    height: 56px;
+    line-height: 65px;
+    font-size: 14px;
+    color: #323333;
+    border-bottom: 1px solid #e7e7e7e7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.integrayOrder h4 i{
+    font-style: normal;
+    color: #f08200;
+}
+.integralO{
+    padding: 20px;
+    box-sizing: border-box;
+}
+.integralO ul{
+    border: 1px solid #e7e7e7e7;
+    padding: 20px 20px 0 20px;
+    box-sizing: border-box;
+}
+.integralO ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.integralO ul li:nth-child(1){
+    height: 46px;
+    line-height: 46px;
+    background: #f2f2f2;
+    border-top: 1px solid #e7e7e7e7;
+    padding: 0 20px;
+}
+
+.integralO ul li:nth-child(1) p:nth-child(2){
+    margin-left: 150px;
+}
+.integralO ul li:nth-child(1) p:nth-child(3){
+    margin-left: 390px;
+}
+.integralO ul li:nth-child(1) p span{
+    color: #f08200;
+}
+.integralO ul li:nth-child(1) p i{
+    margin-left: 10px;
+    font-style: normal;
+}
+.integralO ul li:nth-child(2){
+    height: 120px;
+}
+.integralO ul li:nth-child(2) .imgBox{
+    width: 79px;
+    height: 79px;
+    border: 1px solid #e7e7e7e7;
+    background: url('../images/mao_personal_integray_order_img.png')center center no-repeat;
+}
+.integralO ul li:nth-child(2) p:nth-child(2){
+    margin-left: 20px;
+    font-size: 11px;
+    color: #666666;
+}
+.integralO ul li:nth-child(2) p:nth-child(3){
+    margin-left: 120px;
+    font-size: 11px;
+    width: 30px;
+    color: #666666;
+}
+.integralO ul li:nth-child(2) p:nth-child(4){
+    margin-left: 110px;
+    font-size: 11px;
+    color: #666666;
+    width: 30px;
+}
+.integralO ul li:nth-child(2) p:nth-child(5){
+    width: 208px;
+    height: 100%;
+    border-right: 1px solid #e7e7e7e7;
+    border-left: 1px solid #e7e7e7e7;
+    margin-left: 170px;
+    font-size: 11px;
+    color: #666666;
+    line-height: 120px;
+    text-align: center;
+
+}
+.integralO ul{
+    margin-top: 20px;
+}
+.integralO ul:nth-child(1){
+    margin-top: 0px;
+}
+.integralO ul li:nth-child(2) p:nth-child(6){
+    width: 136px;
+    height: 120px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.integralO ul li:nth-child(2) p:nth-child(6) span:nth-child(1){
+    color: #4b943d;
+    font-size: 11px;
+}
+.integralO ul li:nth-child(2) p:nth-child(6) span:nth-child(2){
+    display: block;
+    width: 90px;
+    height: 30px;
+    font-size: 11px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    color: #ffffff;
+    background: #f08200;
+}
+//page
+.integrayOrder #page_box{
+    width: 100%;
+}
+.page_div{
+    font-size: 15px;
+    font-family: "microsoft yahei";
+    color: #666666;
+    margin-right: 10px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-flex: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+#firstPage, #lastPage{
+    width: 50px;
+    color: #0073A9;
+}
+#prePage, #nextPage{
+    width: 50px;
+    height:32px;
+    color: #0073A9;
+}
+#prePage{
+    background:#498e3d url('../images/mao_seller_pag1.png')center center no-repeat;
+    margin-right:25px;
+}
+#nextPage{
+    background:#498e3d url('../images/mao_seller_pag2.png')center center no-repeat;
+    margin-left:25px;
+}
+.page_div a{
+    min-width:40px;
+    height: 32px;
+    text-align: center;
+    margin: 0 4px;
+    cursor: pointer;
+    line-height: 32px;
+    color: #666666;
+    font-size: 13px;
+    display: inline-block;
+}
+.page_div b{
+    min-width: 50px;
+    height: 32px;
+    text-align: center;
+    margin: 0 4px;
+    cursor: pointer;
+    line-height: 32px;
+    color: #666666;
+    font-size: 13px;
+    display: inline-block;
+    font-weight:normal;
+}
+.page_div .current{
+    background-color: #498e3d;
+    color: #FFFFFF;
+}
+.page_div input{
+    width: 52px;
+    height:32px;
+    margin:0 20px;
+    text-align:center;
+}
+.page_div button{
+    margin:0 15px;
+    border:0;
+    background:#f08200;
+    color:#fff;
+    font-size:13px;
+    line-height:32px;
+    width: 52px;
+    height:32px;
+}
+

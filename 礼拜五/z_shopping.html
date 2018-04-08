@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="common/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="common/css/swiper-4.1.0.min.css">
+    <link rel="stylesheet" type="text/css" href="common/css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/z_shopping.css">
+</head>
+<body>
+<!-- topbar -->
+    <div class="topbar">
+        <div class="myContainer">
+            <div class="topbar_l">
+                  <div>
+                    所在城市:
+                    <!-- 按钮触发模态框 -->
+                    <button class="btn city" data-toggle="modal" data-target="#myModal">武汉</button>
+                    <!-- 模态框（Modal） -->
+                    <div class="city_m modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel">建议您的收货地址： </h4>
+                                </div>
+                                <form>
+                                    <div class="modal-body" data-toggle="distpicker">
+                                        <select class="province">
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖南</option>
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖北</option>
+                                        </select>
+                                        <span>省</span>
+                                        <select class="municipal">
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                        </select>
+                                        <span>市</span>
+                                        <select class="area">
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                        </select>
+                                        <span>区</span>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn save">保存</button>
+                                    </div>
+                                </form>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal -->
+                    </div>
+
+                    <i></i>
+                  </div>
+
+            </div>
+            <div class="topbar_r fr">
+              <ul class="fr">
+                  <li class="quit"> <a href="#">退出</a></li>
+                  <li class="order"> <a href="#">我的订单</a></li>
+                  <li class="news"> <a href="#">我的消息</a></li>
+                  <li> <a href="#">我是商家</a></li>
+                  <li class="call"> <a href="#">400-800-8820</a></li>
+              </ul>
+              <a class="tip fr" href="xiong_passwordLogin.html">登录</a>
+              <a class="tip fr" href="g_register.html">注册</a>
+            </div>
+        </div>
+    </div>
+<!-- topbar  结束-->
+
+<!-- 导航条 -->
+    <div class="myContainer">
+        <div class="header">
+            <div class="logo">
+                <img src="common/images/index_logo.png">
+            </div>
+            <div class="shopping_title">
+                <span class="shoppingclo">我的购物车</span>
+                <span>></span>
+                <span>确认订单信息</span>
+                <span>></span>
+                <span>订单提交成功</span>
+            </div>
+        </div>
+    </div>
+<!-- 导航条 结束 -->
+    <div class="shopping_line"></div>
+<!-- 购物车详情头部 -->
+    <div class="myContainer">
+        <div class="shopping_topbar">
+            <img src="images/shopping_topbar1.png" alt="" />
+            <h4>购物车</h4>
+        </div>
+    </div>
+<!-- 购物车店家详情 -->
+    <div class="shopping_storebox">
+        <div class="shopping_store myContainer">
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="shopping_bbtn">
+                            <input type="checkbox" class="all_check" value="">
+                        </th>
+                        <th class="shopping_gname">XX水果店</th>
+                        <th class="shopping_gguige">规格</th>
+                        <th class="shopping_gsprice">单价</th>
+                        <th class="shopping_gnum">数量</th>
+                        <th class="shopping_gmoney">金额</th>
+                        <th class="shopping_ghandle">操作</th>
+                    </tr>
+                    <tr class="shopping_goods">
+                        <td class="shopping_btn">
+                            <input type="checkbox" class="checklist" value="">
+                        </td>
+                        <td class="shopping_gname">
+                            <img src="images/shopping_goods.jpg" alt="" />
+                            <p>云南蒙自苹果 8个装</p>
+                        </td>
+                        <td>
+                            <p>8个装</p>
+                        </td>
+                        <td class="shopping_listprice">
+                            ￥<p>569</p>
+                        </td>
+                        <td class="shopping_nubtn">
+                            <a href="javascript:;" class="jian sjian">-</a>
+                            <u>1</u>
+                            <a href="javascript:;" class="jia sjia">+</a>
+                        </td>
+                        <td class="shopping_listmoney">
+                            ￥<p>569</p>
+                        </td>
+                        <td class="shopping_listhandle">
+                            <span>删除</span>
+                        </td>
+                    </tr>
+                    <tr class="shopping_goods">
+                        <td class="shopping_btn">
+                            <input type="checkbox" class="checklist" value="">
+                        </td>
+                        <td class="shopping_gname">
+                            <img src="images/shopping_goods.jpg" alt="" />
+                            <p>云南蒙自苹果 8个装</p>
+                        </td>
+                        <td>
+                            <p>8个装</p>
+                        </td>
+                        <td class="shopping_listprice">
+                            ￥<p>569</p>
+                        </td>
+                        <td class="shopping_nubtn">
+                            <a href="javascript:;" class="jian sjian">-</a>
+                            <u>1</u>
+                            <a href="javascript:;" class="jia sjia">+</a>
+                        </td>
+                        <td class="shopping_listmoney">
+                            ￥<p>569</p>
+                        </td>
+                        <td class="shopping_listhandle">
+                            <span>删除</span>
+                        </td>
+                    </tr>
+                    <tr class="shopping_goods">
+                        <td class="shopping_btn">
+                            <input type="checkbox" class="checklist">
+                        </td>
+                        <td class="shopping_gname">
+                            <img src="images/shopping_goods.jpg" alt="" />
+                            <p>云南蒙自苹果 8个装</p>
+                        </td>
+                        <td>
+                            <p>8个装</p>
+                        </td>
+                        <td class="shopping_listprice">
+                            ￥<p>569</p>
+                        </td>
+                        <td class="shopping_nubtn">
+                            <a href="javascript:;" class="jian sjian">-</a>
+                            <u>1</u>
+                            <a href="javascript:;" class="jia sjia">+</a>
+                        </td>
+                        <td class="shopping_listmoney">
+                            ￥<p>569</p>
+                        </td>
+                        <td class="shopping_listhandle">
+                            <span>删除</span>
+                        </td>
+                    </tr>
+                    <tr class="shopping_summoney">
+                        <td class="shopping_summoneylist">
+                            <span>商品金额</span>
+                            <p>￥0.0</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="shopping_store myContainer">
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="shopping_bbtn">
+                            <input type="checkbox" class="all_check" value="">
+                        </th>
+                        <th class="shopping_gname">XX水果店</th>
+                        <th class="shopping_gguige">规格</th>
+                        <th class="shopping_gsprice">单价</th>
+                        <th class="shopping_gnum">数量</th>
+                        <th class="shopping_gmoney">金额</th>
+                        <th class="shopping_ghandle">操作</th>
+                    </tr>
+                    <tr class="shopping_goods">
+                        <td class="shopping_btn">
+                            <input type="checkbox" class="checklist" value="">
+                        </td>
+                        <td class="shopping_gname">
+                            <img src="images/shopping_goods.jpg" alt="" />
+                            <p>云南蒙自苹果 8个装</p>
+                        </td>
+                        <td>
+                            <p>8个装</p>
+                        </td>
+                        <td class="shopping_listprice">
+                            ￥<p>569</p>
+                        </td>
+                        <td class="shopping_nubtn">
+                            <a href="javascript:;" class="jian sjian">-</a>
+                            <u>1</u>
+                            <a href="javascript:;" class="jia sjia">+</a>
+                        </td>
+                        <td class="shopping_listmoney">
+                            ￥<p>569</p>
+                        </td>
+                        <td class="shopping_listhandle">
+                            <span>删除</span>
+                        </td>
+                    </tr>
+                    <tr class="shopping_goods">
+                        <td class="shopping_btn">
+                            <input type="checkbox" class="checklist" value="">
+                        </td>
+                        <td class="shopping_gname">
+                            <img src="images/shopping_goods.jpg" alt="" />
+                            <p>云南蒙自苹果 8个装</p>
+                        </td>
+                        <td>
+                            <p>8个装</p>
+                        </td>
+                        <td class="shopping_listprice">
+                            ￥<p>569</p>
+                        </td>
+                        <td class="shopping_nubtn">
+                            <a href="javascript:;" class="jian sjian">-</a>
+                            <u class="">1</u>
+                            <a href="javascript:;" class="jia sjia">+</a>
+                        </td>
+                        <td class="shopping_listmoney">
+                            ￥<p>569</p>
+                        </td>
+                        <td class="shopping_listhandle">
+                            <span>删除</span>
+                        </td>
+                    </tr>
+                    <tr class="shopping_goods">
+                        <td class="shopping_btn">
+                            <input type="checkbox" class="checklist" value="">
+                        </td>
+                        <td class="shopping_gname">
+                            <img src="images/shopping_goods.jpg" alt="" />
+                            <p>云南蒙自苹果 8个装</p>
+                        </td>
+                        <td>
+                            <p>8个装</p>
+                        </td>
+                        <td class="shopping_listprice">
+                            ￥<p>569</p>
+                        </td>
+                        <td class="shopping_nubtn">
+                            <a href="javascript:;" class="jian sjian">-</a>
+                            <u>1</u>
+                            <a href="javascript:;" class="jia sjia">+</a>
+                        </td>
+                        <td class="shopping_listmoney">
+                            ￥<p>569</p>
+                        </td>
+                        <td class="shopping_listhandle">
+                            <span>删除</span>
+                        </td>
+                    </tr>
+                    <tr class="shopping_summoney">
+                        <td class="shopping_summoneylist">
+                            <span>商品金额</span>
+                            <p>￥0.0</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+<!-- 总计 -->
+        <div class="shopping_total myContainer">
+            <div class="shopping_totall">
+                <a class="shopping_totalall">全选</a>
+                <a class="shopping_totaldelete" href="g_sky.html">批量删除</a>
+            </div>
+            <div class="shopping_totalr">
+                <span>商品总计：</span>
+                <p>￥0</p>
+                <a href="javascript:;"><i class="buy">立即购买</i></a>
+            </div>
+        </div>
+    </div>
+<!-- 页脚一 -->
+    <div class="foot1">
+        <div class="myContainer">
+            <ul class="foot1_list">
+                <li><a href="hu_firiday.html"><img src="common/images/foot1_logo1.png">优鲜保障</a></li>
+                <li><img src="common/images/foot1_logo2.png">全程监控</li>
+                <li><img src="common/images/foot1_logo3.png">礼拜五特惠</li>
+                <li><img src="common/images/foot1_logo4.png">基地直供</li>
+                <li><img src="common/images/foot1_logo5.png">准时送达</li>
+            </ul>
+        </div>
+    </div>
+<!-- 页脚一 结束 -->
+
+<!-- 页脚二 -->
+    <div class="foot2">
+        <div class="myContainer">
+            <div class="foot2_box">
+                <div class="left">
+                    <img src="common/images/index_logo.png">
+                    <span>服务时间：08：-22:00</span>&nbsp;&nbsp;
+                    <span>400-800-8820</span>
+                </div>
+                <div class="code">
+                    <img src="common/images/foot2_code1.jpg">
+                    <p>礼拜五官方微信</p>
+                </div>
+                <div class="code">
+                    <img src="common/images/foot2_code1.jpg">
+                    <p>礼拜五官方微信</p>
+                </div>
+                <a href="xiong_about.html">
+                    <dl>
+                        <dt>关于礼拜五 </dt>
+                        <dd>新用户注册</dd>
+                        <dd>在线下单</dd>
+                        <dd>支付方式</dd>
+                    </dl>
+                </a>
+                <a href="xiong_about.html">
+                    <dl>
+                        <dt>关于礼拜五 </dt>
+                        <dd>新用户注册</dd>
+                        <dd>在线下单</dd>
+                        <dd>支付方式</dd>
+                    </dl>
+                </a>
+                <a href="xiong_about.html">
+                    <dl>
+                        <dt>关于礼拜五 </dt>
+                        <dd>新用户注册</dd>
+                        <dd>在线下单</dd>
+                        <dd>支付方式</dd>
+                    </dl>
+                </a>
+                <a href="xiong_about.html">
+                    <dl>
+                        <dt>关于礼拜五 </dt>
+                        <dd>新用户注册</dd>
+                        <dd>在线下单</dd>
+                        <dd>支付方式</dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+    </div>
+<!-- 页脚二 结束 -->
+
+<!-- 页脚三 -->
+    <div class="myContainer">
+        <div class="foot3">
+            <p>版权所有 © 礼拜五  保留所有权利 | 沪ICP备12042163 </p>
+            <p>礼拜五  纵享品质 </p>
+        </div>
+    </div>
+<!-- 页脚三 结束 -->
+
+<script src="common/js/jquery.min.js"></script>
+<script src="common/js/swiper-4.1.0.min.js"></script>
+<script src="common/js/bootstrap.min.js"></script>
+<script src="common/js/myScript.js"></script>
+<script src="js/z_shopping.js"></script>
+</body>
+</html>

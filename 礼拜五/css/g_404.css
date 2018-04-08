@@ -1,0 +1,100 @@
+/*
+* @Author: name
+* @Date:   2018-02-03 17:17:53
+* @Last Modified by:   name
+* @Last Modified time: 2018-02-03 17:53:58
+*/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: #333;
+  font-family: "微软雅黑";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+dl,
+dt,
+dd,
+ul,
+li,
+button,
+input,
+table,
+tr,
+td,
+th {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+/*清除input外边框*/
+input:focus {
+  outline: none;
+}
+button:focus {
+  outline: none;
+}
+select:focus {
+  outline: none;
+}
+.myContainer {
+  width: 1280px;
+  margin: 0 auto;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.g_nobox{
+    width:795px;
+    height:532px;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    background: url('../images/g_404_06.png') no-repeat;
+}
+.g_link{
+    width:440px;
+    display:flex;
+    justify-content:space-between;
+    margin:0 auto;
+    margin-top:449px;
+}
+.g_link a{
+    display:inline-block;
+    font-size:18px;
+    color:#ffffff;
+    width:169px;
+    height:45px;
+    border-radius:4%;
+    text-align:center;
+    line-height:45px;
+    background:#f08200;
+}
+.g_link a:nth-child(2){
+    background:#498e3d;
+}
+
+

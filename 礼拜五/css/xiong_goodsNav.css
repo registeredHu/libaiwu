@@ -1,0 +1,65 @@
+.goodsNav {
+  display: flex;
+  flex-direction: column;
+}
+.goodsNav .h1 {
+  display: flex;
+  width: 100%;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  position: relative;
+  height: 50px;
+  margin-bottom: 0;
+  border-top: 1px solid #d3d3d3;
+}
+.goodsNav .h1 .h1-1 {
+  padding: 0 20px 0 20px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  border: 0;
+}
+.goodsNav .h1 .h1-1:hover {
+  color: #5b9751;
+}
+.goodsNav .h1 .h1-1:first-child {
+  border-left: 1px solid #d3d3d3;
+}
+.goodsNav .h1 .h1-click {
+  color: #5b9751;
+  border: 0;
+  background-color: white;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+  text-decoration: none;
+}
+.goodsNav .h1 .h1-2 {
+  position: absolute;
+  right: 0;
+  border: 0;
+  height: 50px;
+  width: 180px;
+  background: url("../images/goodsNav/nav_02.jpg") center center / cover no-repeat;
+}
+.goodsNav .h2 {
+  padding: 0 40px 0 40px;
+  margin-top: 0px;
+  border: 1px solid #d3d3d3;
+  display: flex;
+  flex-direction: column;
+}
+.goodsNav .h2 .h3 {
+  margin-top: 40px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ec6a17;
+}
+.goodsNav .h2 .h4 {
+  font-size: 15px;
+  line-height: 30px;
+  color: #8c8c8c;
+  margin-bottom: 30px;
+}
+.goodsNav .h2 img {
+  width: 100%;
+}

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset=utf-8>
+<meta name=description content="">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8" />
+    <title>站内信—消息详情</title>
+    <link rel="stylesheet" type="text/css" href="common/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="common/css/swiper-4.1.0.min.css">
+    <link rel="stylesheet" type="text/css" href="common/css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/mao_common_personal.css">
+    <link rel="stylesheet" type="text/css" href="css/xiong_personal_letter.css">
+</head>
+<body>
+<!-- topbar -->
+    <div class="topbar">
+        <div class="myContainer">
+            <div class="topbar_l">
+                  <div>
+                    所在城市:
+                    <!-- 按钮触发模态框 -->
+                    <button class="btn city" data-toggle="modal" data-target="#myModal">武汉</button>
+                    <!-- 模态框（Modal） -->
+                    <div class="city_m modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel">建议您的收货地址： </h4>
+                                </div>
+                                <form>
+                                    <div class="modal-body" data-toggle="distpicker">
+                                        <select class="province">
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖南</option>
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖北</option>
+                                        </select>
+                                        <span>省</span>
+                                        <select class="municipal">
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                        </select>
+                                        <span>市</span>
+                                        <select class="area">
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                        </select>
+                                        <span>区</span>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn save">保存</button>
+                                    </div>
+                                </form>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal -->
+                    </div>
+
+                    <i></i>
+                  </div>
+
+            </div>
+            <div class="topbar_r fr">
+              <ul class="fr">
+                  <li class="quit"> <a href="#">退出</a></li>
+                  <li class="order"> <a href="#">我的订单</a></li>
+                  <li class="news"> <a href="#">我的消息</a></li>
+                  <li> <a href="#">我是商家</a></li>
+                  <li class="call"> <a href="#">400-800-8820</a></li>
+              </ul>
+              <a class="tip fr" href="xiong_passwordLogin.html">登录</a>
+              <a class="tip fr" href="g_register.html">注册</a>
+            </div>
+        </div>
+    </div>
+<!-- topbar  结束-->
+
+<!-- 导航条 -->
+    <div class="myContainer">
+        <div class="header">
+            <div class="logo">
+                <img src="common/images/index_logo.png">
+            </div>
+            <div class="search">
+                <div class="up">
+                    <input type="text" placeholder="请输入关键字" class="search_text">
+                    <a href="javascript:;"><button type="submit" class="search_but"></button></a>
+                </div>
+                <div class="down">
+                    <span>热门：</span>
+                    <a href="#">奇异果</a>
+                    <a href="#">牛排</a>
+                    <a href="#">山竹</a>
+                    <a href="#">牛油果</a>
+                </div>
+            </div>
+            <div class="user">
+                <a href="javascript:;">个人中心</a>
+                 <a href="z_shopping.html">购物车<span class="total_num">0</span></a>
+            </div>
+        </div>
+        <div class="header_nav">
+            <div class="left">
+                <a href="hu_goods_classify.html"><span class="all_list">全部分类</span></a>
+                <ul class="allList">
+                    <li>
+                        <img src="common/images/downnav4.png">
+                        <a href="#">新鲜水果</a>
+                        <div class="list_bg">
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="common/images/downnav5.png">
+                        <a href="#">生猛海鲜</a>
+                        <div class="list_bg">
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="common/images/downnav1.png">
+                        <a href="#">肉类家禽</a>
+                        <div class="list_bg">
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li><img src="common/images/downnav2.png"><a href="#">蛋奶素食</a></li>
+                    <li><img src="common/images/downnav3.png"><a href="#">田园蔬菜</a></li>
+                    <li><img src="common/images/downnav6.png"><a href="#">零食酒水</a></li>
+                    <li><img src="common/images/downnav7.png"><a href="#">粮油杂货</a></li>
+                    <li><img src="common/images/downnav8.png"><a href="#">礼品卡劵</a></li>
+                    <li><img src="common/images/downnav9.png"><a href="#">家具用品</a></li>
+                </ul>
+            </div>
+            <ul class="right">
+               <li class="active"><a href="index.html">首页</a></li>
+                <li><a href="z_city.html">同城</a></li>
+                <li><a href="xiong_about.html">礼拜五</a></li>
+                <li><a href="mao_integral.html">积分商城</a></li>
+                <li><a href="mao_subject.html">导航+</a></li>
+            </ul>
+        </div>
+    </div>
+<!-- 导航条 结束 -->
+
+<!-- 个人中心 -->
+    <div class="personal">
+        <div class="myContainer">
+            <!-- 个人中心左侧导航栏 -->
+                <div class="personal_bar">
+                    <ul>
+                        <h3>个人中心</h3>
+                        <li>
+                            <h4>交易管理 &nbsp;&nbsp; ></h4>
+                            <a href="mao_personal_account.html">我的账户</a>
+                            <a href="mao_personal_myOrder.html">我的订单</a>
+                            <a href="mao_personal_integray.html">我的积分</a>
+                            <a href="mao_personal_integray_order.html">积分订单</a>
+                            <a href="g_wallet.html">我的钱包</a>
+                        </li>
+                        <li>
+                            <h4>会员资料  &nbsp;&nbsp; ></h4>
+                            <a href="zhang_personal_data.html">个人资料</a>
+                            <a href="mao_personal_address.html">地址管理</a>
+                            <a href="xiong_personal_myfavorite.html">我的收藏</a>
+                            <a href="xiong_personal_lookthrough.html">最近浏览</a>
+                            <a href="xiong_personal_amendPassword.html">修改密码</a>
+                        </li>
+                        <li>
+                            <h4>站内信 &nbsp;&nbsp; ></h4>
+                            <a href="xiong_personal_letter_mynews.html">我的消息</a>
+                            <a href="xiong_personal_letter_suggestion.html">意见反馈</a>
+                        </li>
+                    </ul>
+                </div>
+            <!-- 个人中心左侧导航栏结束 -->
+
+            <!-- 我的消息 -->
+                <div class="mynews">
+                    <h4>我的消息</h4>
+                    <div class="mynews_datail_body">
+                        <div class="mynews_detail_h1">您的货物已发货</div>
+                        <div class="mynews_detail_h2">2015年9月23日&nbsp;15:24</div>
+                        <div class="mynews_detail_h3">先帝创业未半而中道崩殂，今天下三分，益州疲弊，此诚危急存亡之秋也。然侍卫之臣不懈于内，忠志之士忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气，不宜妄自菲薄，引喻失义，以塞忠谏之路也。<br>宫中府中，俱为一体，陟罚臧否，不宜异同。若有作奸犯科及为忠善者，宜付有司论其刑赏，以昭陛下平明之理，不宜偏私，使内外异法也。<br>侍中、侍郎郭攸之、费祎、董允等，此皆良实，志虑忠纯，是以先帝简拔以遗陛下。愚以为宫中之事，事无大小，悉以咨之，然后施行，必得裨补阙漏，有所广益。<br>将军向宠，性行淑均，晓畅军事，试用之于昔日，先帝称之曰能，是以众议举宠为督。愚以为营中之事，悉以咨之，必能使行阵和睦，优劣得所。<br>亲贤臣，远小人，此先汉所以兴隆也；亲小人，远贤臣，此后汉所以倾颓也。先帝在时，每与臣论此事，未尝不叹息痛恨于桓、灵也。侍中、尚书、长史、参军，此悉贞良死节之臣，愿陛下亲之信之，则汉室之隆，可计日而待也。</div>
+
+                    </div>
+
+                 </div>
+            <!-- 我的消息结束 -->
+        </div>
+    </div>
+<!-- 个人中心结束 -->
+<!-- 页脚一 -->
+    <div class="foot1">
+        <div class="myContainer">
+            <ul class="foot1_list">
+                <li><a href="hu_firiday.html"><img src="common/images/foot1_logo1.png">优鲜保障</a></li>
+                <li><a href="#"><img src="common/images/foot1_logo2.png">全程监控</a></li>
+                <li><a href="#"><img src="common/images/foot1_logo3.png">礼拜五特惠</a></li>
+                <li><a href="#"><img src="common/images/foot1_logo4.png">基地直供</a></li>
+                <li><a href="#"><img src="common/images/foot1_logo5.png">准时送达</a></li>
+            </ul>
+        </div>
+    </div>
+<!-- 页脚一 结束 -->
+<!-- 页脚二 -->
+    <div class="foot2">
+        <div class="myContainer">
+            <div class="foot2_box">
+                <div class="left">
+                    <img src="common/images/index_logo.png">
+                    <span>服务时间：08：-22:00</span>&nbsp;&nbsp;
+                    <span>400-800-8820</span>
+                </div>
+                <div class="code">
+                    <img src="common/images/foot2_code1.jpg">
+                    <p>礼拜五官方微信</p>
+                </div>
+                <div class="code">
+                    <img src="common/images/foot2_code1.jpg">
+                    <p>礼拜五官方微信</p>
+                </div>
+                <a href="xiong_about.html">
+                    <dl>
+                        <dt>关于礼拜五 </dt>
+                        <dd>新用户注册</dd>
+                        <dd>在线下单</dd>
+                        <dd>支付方式</dd>
+                    </dl>
+                </a>
+                <a href="xiong_about.html">
+                    <dl>
+                        <dt>关于礼拜五 </dt>
+                        <dd>新用户注册</dd>
+                        <dd>在线下单</dd>
+                        <dd>支付方式</dd>
+                    </dl>
+                </a>
+                <a href="xiong_about.html">
+                    <dl>
+                        <dt>关于礼拜五 </dt>
+                        <dd>新用户注册</dd>
+                        <dd>在线下单</dd>
+                        <dd>支付方式</dd>
+                    </dl>
+                </a>
+                <a href="xiong_about.html">
+                    <dl>
+                        <dt>关于礼拜五 </dt>
+                        <dd>新用户注册</dd>
+                        <dd>在线下单</dd>
+                        <dd>支付方式</dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+    </div>
+<!-- 页脚二 结束 -->
+
+<!-- 页脚三 -->
+    <div class="myContainer">
+        <div class="foot3">
+            <p>版权所有 © 礼拜五  保留所有权利 | 沪ICP备12042163 </p>
+            <p>礼拜五  纵享品质 </p>
+        </div>
+    </div>
+<!-- 页脚三 结束 -->
+
+<script src="common/js/jquery.min.js"></script>
+<script src="common/js/swiper-4.1.0.min.js"></script>
+<script src="common/js/bootstrap.min.js"></script>
+<script src="common/js/myScript.js"></script>
+<script src="js/hu_script.js"></script>
+
+</body>
+</html>

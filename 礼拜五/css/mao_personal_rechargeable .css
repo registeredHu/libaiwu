@@ -1,0 +1,177 @@
+.personal .myAccount {
+  width: 1086px;
+  height: 679px;
+}
+.myAccount .user {
+  width: 100%;
+  height: 220px;
+  border: 1px solid #e7e7e7;
+  background: #f4fff2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.myAccount .user img {
+  margin: 0 40px;
+}
+.myAccount .user p {
+  font-size: 18px;
+  color: #666666;
+}
+.myAccount .user p span {
+  color: #e85e35;
+}
+.myAccount dl {
+  display: flex;
+  flex-direction: row;
+  margin-left: 220px;
+  align-items: center;
+  font-size: 18px;
+}
+.myAccount dl dt {
+  text-align: center;
+  line-height: 34px;
+  font-weight: normal;
+}
+.myAccount dl dd {
+  text-align: center;
+  line-height: 34px;
+}
+.myAccount dl dd:nth-child(2) {
+  margin: 0 80px;
+}
+.myAccount dl dd:nth-child(3) {
+  cursor: pointer;
+}
+.myAccount dl span {
+  color: #f08200;
+}
+.myAccount dl dd i {
+  color: #4b943d;
+  font-style: normal;
+}
+.myAccount .accountImg {
+  margin-top: 30px;
+  border: 1px solid #e7e7e7;
+}
+.card {
+  width: 1086px;
+  height: 679px;
+  border: 1px solid #e7e7e7;
+}
+.card h4 {
+  padding: 0 20px;
+  width: 100%;
+  height: 56px;
+  line-height: 65px;
+  font-size: 18px;
+  color: #323333;
+  border-bottom: 1px solid #e7e7e7e7;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.card h4 button {
+  border-radius: 4px;
+  border: 0;
+  background: 0;
+  width: 90px;
+  height: 30px;
+  font-size: 14px;
+  background: #498e3d;
+  color: #ffffff;
+  text-align: center;
+  line-height: 30px;
+}
+.card form input[type="text"] {
+  border: 0;
+  background: 0;
+  width: 476px;
+  height: 52px;
+  padding-left: 20px;
+  line-height: 52px;
+  font-size: 18px;
+  color: #999999;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  border: 1px solid #e7e7e7e7;
+  margin-left: 30px;
+}
+.recharge {
+  width: 150px;
+  height: 50px;
+  border: 0;
+  background: 0;
+  background: #f08200;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 50px;
+  text-align: center;
+  margin-left: 30px;
+}
+.myAcc {
+  width: 1086px;
+  height: 100%;
+  padding-bottom: 90px;
+  border: 1px solid #e7e7e7e7;
+}
+.myAcc h4 {
+  padding-left: 20px;
+  font-size: 14px;
+  height: 56px;
+  line-height: 56px;
+  border-bottom: 1px solid #e7e7e7e7;
+}
+.myAcc ul {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 20px;
+  width: 1040px;
+  margin-top: 20px;
+  border: 1px solid #e7e7e7e7;
+}
+.myAcc ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #e7e7e7e7;
+}
+.myAcc ul li p {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+.myAcc ul li:hover {
+  background: #f4fff2;
+}
+.myAcc ul li:nth-child(1):hover {
+  background: #f2f2f2;
+}
+.myAcc ul li p:nth-child(1) {
+  width: 230px;
+}
+.myAcc ul li p:nth-child(2) {
+  width: 290px;
+}
+.myAcc ul li p:nth-child(3) {
+  width: 280px;
+}
+.myAcc ul li p:nth-child(4) {
+  width: 240px;
+}
+.myAcc ul li:nth-child(1) {
+  line-height: 45px;
+  width: 100%;
+  height: 45px;
+  background: #f2f2f2;
+  border-bottom: 0;
+}
+.myAcc ul li p:nth-child(3) {
+  color: #f08200;
+}
+.myAcc ul li:nth-child(1) p:nth-child(3) {
+  color: #333333;
+}

@@ -1,0 +1,113 @@
+.perphone {
+  width: 1085px;
+  height: 678px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+.perphone h3 {
+  width: 100%;
+  padding-left: 20px;
+  line-height: 58px;
+  font-size: 18px;
+  color: #333;
+  font-weight: normal;
+  border-bottom: 1px solid #e7e7e7;
+}
+.perphone .perphonebox {
+  width: 960px;
+  height: 430px;
+  margin: 40px auto auto 40px;
+}
+.perphoneboxl {
+  width: 307px;
+  height: 430px;
+  float: left;
+  position: relative;
+}
+.perphoneboxl a.yanz {
+  width: 100px;
+  height: 32px;
+  background: #e8e8e8;
+  position: absolute;
+  right: 5px;
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  line-height: 32px;
+}
+.perphoneboxl input[type='text'] {
+  width: 100%;
+  height: 44px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  color: #999;
+  font-size: 16px;
+  padding-left: 11px;
+  margin-bottom: 30px;
+  background-size: 12px 12px !important;
+}
+.perphoneboxl span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 44px;
+  margin-bottom: 30px;
+}
+.perphoneboxl span input[type='text'].peyz {
+  width: 113px;
+  height: 44px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+.perphoneboxl span input[type='text'].sjy {
+  margin-bottom: 0;
+}
+.perphoneboxl span img {
+  float: left;
+  width: 78px;
+  margin-right: 10px;
+}
+.perphoneboxl span a.prlook {
+  float: left;
+  font-size: 14px;
+  color: #ea5b0c;
+  text-decoration: none;
+}
+.perphoneboxl a.perbd {
+  display: block;
+  width: 150px;
+  height: 50px;
+  background: #f08200;
+  border-radius: 4px;
+  font-size: 20px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  margin-top: 40px;
+}
+.perphoneboxr {
+  width: 653px;
+  height: 430px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.perphoneboxr a {
+  width: 455px;
+  height: 184px;
+  background: #d9d9d9 url('../images/phone3.png') 115px center no-repeat;
+  display: block;
+  border-radius: 4px;
+  line-height: 184px;
+  font-size: 24px;
+  color: #ea5b0c;
+  padding-left: 178px;
+  text-decoration: none;
+}
+.peponeboxx {
+  display: none;
+}

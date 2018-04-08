@@ -1,0 +1,90 @@
+.personal_lookthrough {
+  width: 1086px;
+  min-height: 679px;
+  border: 1px solid #e7e7e7;
+}
+.personal_lookthrough h4 {
+  padding-left: 20px;
+  width: 100%;
+  height: 56px;
+  line-height: 65px;
+  font-size: 18px;
+  color: #323333;
+  border-bottom: 1px solid #e7e7e7;
+}
+.lookthrough_body {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.lookthrough_body .goods_collect {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 20px 20px ;
+  width: 300px;
+  height: 480px;
+  border: 1px solid #e7e7e7;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.lookthrough_body .goods_collect .btn_del {
+  align-self: flex-end;
+  border: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #4b943d;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+.lookthrough_body .goods_collect .goods_img {
+  height: 240px;
+  width: 100%;
+  margin-top: 20px;
+}
+.lookthrough_body .goods_collect .h1 {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 30px 0 0 0;
+}
+.lookthrough_body .goods_collect .h2 {
+  font-size: 15px;
+  line-height: 40px;
+  color: #7d7d7d;
+  margin: 0;
+}
+.lookthrough_body .goods_collect .h3 {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px 0 ;
+  position: relative;
+}
+.lookthrough_body .goods_collect .h3 .h3-1 {
+  color: red;
+  font-size: 25px;
+  font-weight: 600;
+}
+.lookthrough_body .goods_collect .h3 .h3-2 {
+  margin-left: 20px;
+  color: #7d7d7d;
+  font-size: 20px;
+  text-decoration: line-through;
+}
+.lookthrough_body .goods_collect .h3 .h3-3 {
+  position: absolute;
+  right: 0;
+}
+.lookthrough_body .goods_collect .bgcolor_change {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.lookthrough_body .goods_collect .btnbgcolor_change {
+  background-color: #999999;
+}

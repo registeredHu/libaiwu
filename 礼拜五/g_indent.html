@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>支付成功</title>
+    <link rel="stylesheet" type="text/css" href="common/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="common/css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/g_indent.css">
+</head>
+<body>
+    <!-- topbar -->
+    <div class="topbar">
+        <div class="myContainer">
+            <div class="topbar_l">
+                  <div>
+                    所在城市:
+                    <!-- 按钮触发模态框 -->
+                    <button class="btn city" data-toggle="modal" data-target="#myModal">武汉</button>
+                    <!-- 模态框（Modal） -->
+                    <div class="city_m modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel">建议您的收货地址： </h4>
+                                </div>
+                                <form>
+                                    <div class="modal-body" data-toggle="distpicker">
+                                        <select class="province">
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖南</option>
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖北</option>
+                                        </select>
+                                        <span>省</span>
+                                        <select class="municipal">
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                        </select>
+                                        <span>市</span>
+                                        <select class="area">
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                        </select>
+                                        <span>区</span>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn save">保存</button>
+                                    </div>
+                                </form>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal -->
+                    </div>
+
+                    <i></i>
+                  </div>
+
+            </div>
+            <div class="topbar_r fr">
+              <ul class="fr">
+                  <li class="quit"> <a href="#">退出</a></li>
+                  <li class="order"> <a href="#">我的订单</a></li>
+                  <li class="news"> <a href="#">我的消息</a></li>
+                  <li> <a href="#">我是商家</a></li>
+                  <li class="call"> <a href="#">400-800-8820</a></li>
+              </ul>
+              <a class="tip fr" href="xiong_passwordLogin.html">登录</a>
+               <a class="tip fr" href="g_register.html">注册</a>
+            </div>
+        </div>
+    </div>
+<!-- topbar  结束-->
+
+    <div class="myContainer">
+        <!-- 订单提交表头 -->
+        <div class="g_indent">
+            <img src="images/g_indent_06.png">
+            <a href="##" class="g_link3">订单提交成功</a>
+            <span class="hao fr">></span>
+            <a href="##" class="g_link2">确认订单信息</a>
+            <span class="hao fr">></span>
+            <a href="##" class="g_link1">我的购物车</a>
+        </div>
+
+        <!-- 订单提交成功 -->
+        <div class="g_win">
+            <span>订单已提交，请于24小时内完成支付</span>
+            <a>（逾期订单将被取消）</a>
+        </div>
+
+       <!--  送货地址 -->
+       <div class="g_site">
+           <span>送货至： 但小兵 北京 北京市 昌平区 天通苑明天第一城4号楼101 固定电话010-21541589</span>
+       </div>
+
+       <!-- 金额和编号 -->
+       <div class="g_money">
+           <span>应付金额:</span>
+           <b>165.90</b>
+           <span>（在线支付）</span>
+           <i>订单编号425954156947</i>
+       </div>
+
+       <div class="g_terrace">
+           支付平台
+       </div>
+
+       <!-- 支付平台 -->
+       <div class="g_pay">
+            <input type="radio" name="mode"/>
+            <div class="g_pay1"></div>
+
+            <input type="radio" name="mode"/>
+            <div class="g_pay2"></div>
+
+            <input type="radio" name="mode" />
+            <div class="g_pay3"></div>
+
+            <input type="radio" name="mode"  />
+            <div class="g_pay4">
+              <a href="##">余额支付（￥500）</a>
+            </div>
+        </div>
+
+        <!-- 付款码 -->
+        <div class="g_code">
+            <a href="z_payok.html">立即支付</a>
+        </div>
+    </div>
+
+    <!-- 内容区结束 -->
+
+
+    <!-- 页脚一 -->
+    <div class="foot1">
+        <div class="myContainer">
+            <ul class="foot1_list">
+                <li><img src="common/images/foot1_logo1.png">优鲜保障</li>
+                <li><img src="common/images/foot1_logo2.png">全程监控</li>
+                <li><img src="common/images/foot1_logo3.png">礼拜五特惠</li>
+                <li><img src="common/images/foot1_logo4.png">基地直供</li>
+                <li><img src="common/images/foot1_logo5.png">准时送达</li>
+            </ul>
+        </div>
+    </div>
+<!-- 页脚一 结束
+
+<!-- 页脚二 -->
+    <div class="foot2">
+        <div class="myContainer">
+            <div class="foot2_box">
+                <div class="left">
+                    <img src="common/images/index_logo.png">
+                    <span>服务时间：08：-22:00</span>&nbsp;&nbsp;
+                    <span>400-800-8820</span>
+                </div>
+                <div class="code">
+                    <img src="common/images/foot2_code1.jpg">
+                    <p>礼拜五官方微信</p>
+                </div>
+                <div class="code">
+                    <img src="common/images/foot2_code1.jpg">
+                    <p>礼拜五官方微信</p>
+                </div>
+                <dl>
+                    <dt>关于礼拜五 </dt>
+                    <dd>新用户注册</dd>
+                    <dd>在线下单</dd>
+                    <dd>支付方式</dd>
+                </dl>
+                <dl>
+                    <dt>关于礼拜五 </dt>
+                    <dd>新用户注册</dd>
+                    <dd>在线下单</dd>
+                    <dd>支付方式</dd>
+                </dl>
+                <dl>
+                    <dt>关于礼拜五 </dt>
+                    <dd>新用户注册</dd>
+                    <dd>在线下单</dd>
+                    <dd>支付方式</dd>
+                </dl>
+                <dl>
+                    <dt>关于礼拜五 </dt>
+                    <dd>新用户注册</dd>
+                    <dd>在线下单</dd>
+                    <dd>支付方式</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+<!-- 页脚二 结束
+
+<!-- 页脚三 -->
+    <div class="myContainer">
+        <div class="foot3">
+            <p>版权所有 © 礼拜五  保留所有权利 | 沪ICP备12042163 </p>
+            <p>礼拜五  纵享品质 </p>
+        </div>
+    </div>
+<!-- 页脚三 结束 -->
+    <script src="common/js/jquery.min.js"></script>
+    <script src="common/js/swiper-4.1.0.min.js"></script>
+    <script src="common/js/bootstrap.min.js"></script>
+    <script src="common/js/myScript.js"></script>
+    <script src="js/g_indent.js"></script>
+</body>
+</html>

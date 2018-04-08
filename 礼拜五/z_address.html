@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>订单确认</title>
+    <link rel="stylesheet" type="text/css" href="common/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="common/css/swiper-4.1.0.min.css">
+    <link rel="stylesheet" type="text/css" href="common/css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/z_address.css">
+</head>
+<body>
+<!-- topbar -->
+    <div class="topbar">
+        <div class="myContainer">
+            <div class="topbar_l">
+                  <div>
+                    所在城市:
+                    <!-- 按钮触发模态框 -->
+                    <button class="btn city" data-toggle="modal" data-target="#myModal">武汉</button>
+                    <!-- 模态框（Modal） -->
+                    <div class="city_m modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel">建议您的收货地址： </h4>
+                                </div>
+                                <form>
+                                    <div class="modal-body" data-toggle="distpicker">
+                                        <select class="province">
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖南</option>
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖北</option>
+                                        </select>
+                                        <span>省</span>
+                                        <select class="municipal">
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                        </select>
+                                        <span>市</span>
+                                        <select class="area">
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                        </select>
+                                        <span>区</span>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn save">保存</button>
+                                    </div>
+                                </form>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal -->
+                    </div>
+
+                    <i></i>
+                  </div>
+
+            </div>
+            <div class="topbar_r fr">
+              <ul class="fr">
+                  <li class="quit"> <a href="#">退出</a></li>
+                  <li class="order"> <a href="#">我的订单</a></li>
+                  <li class="news"> <a href="#">我的消息</a></li>
+                  <li> <a href="#">我是商家</a></li>
+                  <li class="call"> <a href="#">400-800-8820</a></li>
+              </ul>
+             <a class="tip fr" href="xiong_passwordLogin.html">登录</a>
+             <a class="tip fr" href="g_register.html">注册</a>
+            </div>
+        </div>
+    </div>
+<!-- topbar  结束-->
+
+<!-- 导航条 -->
+    <div class="myContainer">
+        <div class="header">
+            <div class="logo">
+                <img src="common/images/index_logo.png">
+            </div>
+            <div class="shopping_title">
+                <span>我的购物车</span>
+                <span>></span>
+                <span class="shoppingclo">确认订单信息</span>
+                <span>></span>
+                <span>订单提交成功</span>
+            </div>
+        </div>
+    </div>
+<!-- 导航条 结束 -->
+    <div class="shopping_line"></div>
+<!-- 积分商城头部 -->
+    <div class="address_receiving myContainer">
+        <p>收货人信息</p>
+        <dl>
+            <dt><a>收货人姓名：</a><u>*</u></dt>
+            <dd class="inp">
+                <input type="text" placeholder='可以收货人姓名' class="inp_name" />
+            </dd>
+        </dl>
+        <dl>
+            <dt><a>所在地区：</a><u>*</u></dt>
+            <dd class="inp">
+                <select name="address_add" class="address_add">
+                    <option value="0">-请选择-</option>
+                    <option value="1">北京市</option>
+                    <option value="2">天津市</option>
+                    <option value="3">河北省</option>
+                    <option value="4">山西省</option>
+                    <option value="5">内蒙古自治区</option>
+                    <option value="6">辽宁省</option>
+                    <option value="7">吉林省</option>
+                    <option value="8">黑龙江省</option>
+                    <option value="9">上海市</option>
+                    <option value="10">江苏省</option>
+                    <option value="11">浙江省</option>
+                    <option value="12">安徽省</option>
+                    <option value="13">福建省</option>
+                    <option value="14">北京市</option>
+                    <option value="15">天津市</option>
+                    <option value="16">河北省</option>
+                    <option value="17">山西省</option>
+                    <option value="18">内蒙古自治区</option>
+                    <option value="19">辽宁省</option>
+                    <option value="20">吉林省</option>
+                    <option value="21">黑龙江省</option>
+                    <option value="22">上海市</option>
+                    <option value="23">江苏省</option>
+                    <option value="24">浙江省</option>
+                    <option value="25">安徽省</option>
+                    <option value="26">福建省</option>
+                </select>
+                <select name="address_add" class="address_addcity">
+                    <option value="">-请选择-</option>
+                </select>
+                <select name="address_add" class="address_adddistrict">
+                    <option value="">-请选择-</option>
+                </select>
+            </dd>
+        </dl>
+        <dl>
+            <dt><a>详细地址：</a><u>*</u></dt>
+            <dd class="inp">
+                <input type="text" placeholder='用于接收货物的详细地址' class="inp_name" />
+            </dd>
+        </dl>
+        <dl>
+            <dt><a>联系电话：</a><u>*</u></dt>
+            <dd class="inp">
+                <input type="text" placeholder='推荐使用电话号码' class="inp_phoneid" />
+            </dd>
+            <dt><a>或固定电话：</a></dt>
+            <dd>
+                <input type="text" placeholder='区号' class="inp_phoneid1" />
+            </dd>
+            <dt class="addd"><a>-</a></dt>
+            <dd>
+                <input type="text" placeholder='电话号码' class="inp_phoneid2" />
+            </dd>
+        </dl>
+        <a class="okgoods" href="z_integralmessage.html">确认并设为默认地址</a>
+    </div>
+<!-- 头部结束 -->
+    <div class="inteqraim_leg myContainer">
+        <span>商品信息</span>
+        <table class="inteqraim_legbox">
+            <tbody>
+                <tr class="inteqraim_legtopbar">
+                    <th class="inteqraim_legname">XX水果店</th>
+                    <th>规格</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>金额</th>
+                </tr>
+                <tr class="inteqraim_leggoods">
+                    <td class="inteqraim_legname">
+                        <img src="images/shopping_goods.jpg" alt="" />
+                        <p>云南蒙自苹果 8个装</p>
+                    </td>
+                    <td>8个装</td>
+                    <td class="inteqraim_leggoodsnum">￥569</td>
+                    <td class="shopping_nubtn inteqraim_le">
+                        <a href="javascript:;" class="jian imjian">-</a>
+                        <u>1</u>
+                        <a href="javascript:;" class="jia imjia">+</a>
+                    </td>
+                    <td><i class="im_subtmoney">￥569</i></td>
+                </tr>
+                <tr class="inteqraim_leggoods">
+                    <td class="inteqraim_legname">
+                        <img src="images/shopping_goods.jpg" alt="" />
+                        <p>云南蒙自苹果 8个装</p>
+                    </td>
+                    <td>8个装</td>
+                    <td class="inteqraim_leggoodsnum">￥569</td>
+                    <td class="shopping_nubtn inteqraim_le">
+                        <a href="javascript:;" class="jian imjian">-</a>
+                        <u>1</u>
+                        <a href="javascript:;" class="jia imjia">+</a>
+                    </td>
+                    <td><i class="im_subtmoney">￥569</i></td>
+                </tr>
+                <tr class="inteqraim_leggoods">
+                    <td class="inteqraim_legname">
+                        <img src="images/shopping_goods.jpg" alt="" />
+                        <p>云南蒙自苹果 8个装</p>
+                    </td>
+                    <td>8个装</td>
+                    <td class="inteqraim_leggoodsnum">￥569</td>
+                    <td class="shopping_nubtn inteqraim_le">
+                        <a href="javascript:;" class="jian imjian">-</a>
+                        <u>1</u>
+                        <a href="javascript:;" class="jia imjia">+</a>
+                    </td>
+                    <td><i class="im_subtmoney">￥569</i></td>
+                </tr>
+                <tr class="inteqraim_summoney">
+                    <td class="inteqraim_summoneylist">
+                        <u>运费</u>
+                        <a class="inteqraim_summoneylistcarriage">￥5.0</a>
+                        <u>商品金额</u>
+                        <a class="inteqraim_summoneylistprice">￥108.0</a>
+                        <u>商品合计</u>
+                        <a class="inteqraim_summoneylisttotalprice">￥108.0</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="inteqraim_tianjia">开票信息</p>
+        <div class="inteqraim_btnbox">
+            <input type="radio" name="bill1" checked/>
+            <a>不需要</a>
+            <input type="radio" name="bill1"/>
+            <a>个人</a>
+            <input type="radio" name="bill1"/>
+            <a>单位</a>
+        </div>
+        <div class="inteqraim_billbox">
+            <a>发票抬头：</a>
+            <input type="text" />
+            <u>*</u>
+            <a>请填写后认真核对发票信息</a>
+        </div>
+        <div class="inteqraim_billboxline"></div>
+        <p class="inteqraim_tianjia">添加订单备注</p>
+        <input type="text" class="inteqraim_remark" placeholder='限45个字，请填写有关商品、支付、发票等信息'/>
+    </div>
+    <div class="inteqraim_leg myContainer">
+        <table class="inteqraim_legbox">
+            <tbody>
+                <tr class="inteqraim_legtopbar">
+                    <th class="inteqraim_legname">XX水果店</th>
+                    <th>规格</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>金额</th>
+                </tr>
+                <tr class="inteqraim_leggoods">
+                    <td class="inteqraim_legname">
+                        <img src="images/shopping_goods.jpg" alt="" />
+                        <p>云南蒙自苹果 8个装</p>
+                    </td>
+                    <td>8个装</td>
+                    <td class="inteqraim_leggoodsnum">￥569</td>
+                    <td class="shopping_nubtn inteqraim_le">
+                        <a href="javascript:;" class="jian imjian">-</a>
+                        <u>1</u>
+                        <a href="javascript:;" class="jia imjia">+</a>
+                    </td>
+                    <td><i class="im_subtmoney">￥569</i></td>
+                </tr>
+                <tr class="inteqraim_leggoods">
+                    <td class="inteqraim_legname">
+                        <img src="images/shopping_goods.jpg" alt="" />
+                        <p>云南蒙自苹果 8个装</p>
+                    </td>
+                    <td>8个装</td>
+                    <td class="inteqraim_leggoodsnum">￥569</td>
+                    <td class="shopping_nubtn inteqraim_le">
+                        <a href="javascript:;" class="jian imjian">-</a>
+                        <u>1</u>
+                        <a href="javascript:;" class="jia imjia">+</a>
+                    </td>
+                    <td><i class="im_subtmoney">￥569</i></td>
+                </tr>
+                <tr class="inteqraim_leggoods">
+                    <td class="inteqraim_legname">
+                        <img src="images/shopping_goods.jpg" alt="" />
+                        <p>云南蒙自苹果 8个装</p>
+                    </td>
+                    <td>8个装</td>
+                    <td class="inteqraim_leggoodsnum">￥569</td>
+                    <td class="shopping_nubtn inteqraim_le">
+                        <a href="javascript:;" class="jian imjian">-</a>
+                        <u>1</u>
+                        <a href="javascript:;" class="jia imjia">+</a>
+                    </td>
+                    <td><i class="im_subtmoney">￥569</i></td>
+                </tr>
+                <tr class="inteqraim_summoney">
+                    <td class="inteqraim_summoneylist">
+                        <u>运费</u>
+                        <a class="inteqraim_summoneylistcarriage">￥5.0</a>
+                        <u>商品金额</u>
+                        <a class="inteqraim_summoneylistprice">￥108.0</a>
+                        <u>商品合计</u>
+                        <a class="inteqraim_summoneylisttotalprice">￥108.0</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="inteqraim_tianjia">开票信息</p>
+        <div class="inteqraim_btnbox">
+            <input type="radio" name="bill" checked />
+            <a>不需要</a>
+            <input type="radio" name="bill"/>
+            <a>个人</a>
+            <input type="radio" name="bill"/>
+            <a>单位</a>
+        </div>
+        <div class="inteqraim_billbox">
+            <a>发票抬头：</a>
+            <input type="text" />
+            <u>*</u>
+            <a>请填写后认真核对发票信息</a>
+        </div>
+        <div class="inteqraim_billboxline"></div>
+        <p class="inteqraim_tianjia">添加订单备注</p>
+        <input type="text" class="inteqraim_remark" placeholder='限45个字，请填写有关商品、支付、发票等信息'/>
+        <div class="add_time">
+            <a>次日达·礼拜五专享</a>
+            <div class="add_tbox">
+                <span>选择送达时间： </span>
+                <p>   2016年9月18日12:00~3:00</p>
+                <i></i>
+                <a>点击修改</a>
+            </div>
+            <div class="int_timebb">
+                <div class="int_time">
+                    <ul class="int_timebox">
+                        <li>10:00-13:00</li>
+                        <li>10:00-13:00</li>
+                        <li>10:00-13:00</li>
+                        <li>10:00-13:00</li>
+                        <li>10:00-13:00</li>
+                        <li>10:00-13:00</li>
+                        <li>10:00-13:00</li>
+                        <li>10:00-13:00</li>
+                        <li>10:00-13:00</li>
+                        <li>10:00-13:00</li>
+                    </ul>
+                    <span>
+                        <a href="##" class="in_qx">取消</a>
+                        <a href="##" class="in_qr">确认</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="add_ok">
+            <div class="add_okb">
+                <a>实付金额：</a>
+                <p>￥2977</p>
+            </div>
+            <div class="add_oka">
+                <a>订单完成后可获得积分：</a>
+                <p>300积分</p>
+            </div>
+            <a href="##" class="add_tj">提交订单</a>
+        </div>
+    </div>
+<!-- 页脚一 -->
+    <div class="foot1">
+        <div class="myContainer">
+            <ul class="foot1_list">
+                <li><a href="hu_firiday.html"><img src="common/images/foot1_logo1.png">优鲜保障</a></li>
+                <li><img src="common/images/foot1_logo2.png">全程监控</li>
+                <li><img src="common/images/foot1_logo3.png">礼拜五特惠</li>
+                <li><img src="common/images/foot1_logo4.png">基地直供</li>
+                <li><img src="common/images/foot1_logo5.png">准时送达</li>
+            </ul>
+        </div>
+    </div>
+<!-- 页脚一 结束 -->
+
+<!-- 页脚二 -->
+    <div class="foot2">
+        <div class="myContainer">
+            <div class="foot2_box">
+                <div class="left">
+                    <img src="common/images/index_logo.png">
+                    <span>服务时间：08：-22:00</span>&nbsp;&nbsp;
+                    <span>400-800-8820</span>
+                </div>
+                <div class="code">
+                    <img src="common/images/foot2_code1.jpg">
+                    <p>礼拜五官方微信</p>
+                </div>
+                <div class="code">
+                    <img src="common/images/foot2_code1.jpg">
+                    <p>礼拜五官方微信</p>
+                </div>
+                <a href="xiong_about.html">
+                    <dl>
+                        <dt>关于礼拜五 </dt>
+                        <dd>新用户注册</dd>
+                        <dd>在线下单</dd>
+                        <dd>支付方式</dd>
+                    </dl>
+                </a>
+                <a href="xiong_about.html">
+                    <dl>
+                        <dt>关于礼拜五 </dt>
+                        <dd>新用户注册</dd>
+                        <dd>在线下单</dd>
+                        <dd>支付方式</dd>
+                    </dl>
+                </a>
+                <a href="xiong_about.html">
+                    <dl>
+                        <dt>关于礼拜五 </dt>
+                        <dd>新用户注册</dd>
+                        <dd>在线下单</dd>
+                        <dd>支付方式</dd>
+                    </dl>
+                </a>
+                <a href="xiong_about.html">
+                    <dl>
+                        <dt>关于礼拜五 </dt>
+                        <dd>新用户注册</dd>
+                        <dd>在线下单</dd>
+                        <dd>支付方式</dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+    </div>
+<!-- 页脚二 结束 -->
+
+<!-- 页脚三 -->
+    <div class="myContainer">
+        <div class="foot3">
+            <p>版权所有 © 礼拜五  保留所有权利 | 沪ICP备12042163 </p>
+            <p>礼拜五  纵享品质 </p>
+        </div>
+    </div>
+<!-- 页脚三 结束 -->
+
+<script src="common/js/jquery.min.js"></script>
+<script src="common/js/swiper-4.1.0.min.js"></script>
+<script src="common/js/bootstrap.min.js"></script>
+<script src="common/js/myScript.js"></script>
+<script src="js/z_address.js"></script>
+</body>
+</html>

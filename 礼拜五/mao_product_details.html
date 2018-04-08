@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset=utf-8>
+<meta name=description content="">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8" />
+    <title>商品详情页面</title>
+    <link rel="stylesheet" type="text/css" href="common/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="common/css/swiper-4.1.0.min.css">
+    <link rel="stylesheet" type="text/css" href="common/css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/mao_integral_details.css">
+    <link rel="stylesheet" type="text/css" href="css/mao_friday_details.css">
+</head>
+<body>
+<!-- topbar -->
+    <div class="topbar">
+        <div class="myContainer">
+            <div class="topbar_l">
+                  <div>
+                    所在城市:
+                    <!-- 按钮触发模态框 -->
+                    <button class="btn city" data-toggle="modal" data-target="#myModal">武汉</button>
+                    <!-- 模态框（Modal） -->
+                    <div class="city_m modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel">建议您的收货地址： </h4>
+                                </div>
+                                <form>
+                                    <div class="modal-body" data-toggle="distpicker">
+                                        <select class="province">
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖南</option>
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖北">湖北</option>
+                                        </select>
+                                        <span>省</span>
+                                        <select class="municipal">
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                            <option value="武汉">武汉</option>
+                                        </select>
+                                        <span>市</span>
+                                        <select class="area">
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                            <option value="江夏">江夏</option>
+                                        </select>
+                                        <span>区</span>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn save">保存</button>
+                                    </div>
+                                </form>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal -->
+                    </div>
+
+                    <i></i>
+                  </div>
+
+            </div>
+            <div class="topbar_r fr">
+              <ul class="fr">
+                  <li class="quit"> <a href="#">退出</a></li>
+                  <li class="order"> <a href="#">我的订单</a></li>
+                  <li class="news"> <a href="#">我的消息</a></li>
+                  <li> <a href="#">我是商家</a></li>
+                  <li class="call"> <a href="#">400-800-8820</a></li>
+              </ul>
+              <a class="tip fr" href="xiong_passwordLogin.html">登录</a>
+              <a class="tip fr" href="g_register.html">注册</a>
+            </div>
+        </div>
+    </div>
+<!-- topbar  结束-->
+<!-- 导航条 -->
+    <div class="myContainer">
+        <div class="header">
+            <div class="logo">
+                <img src="common/images/index_logo.png">
+            </div>
+            <div class="search">
+                <div class="up">
+                    <input type="text" placeholder="请输入关键字" class="search_text">
+                    <a href="javascript:;"><button type="submit" class="search_but"></button></a>
+                </div>
+                <div class="down">
+                    <span>热门：</span>
+                    <a href="#">奇异果</a>
+                    <a href="#">牛排</a>
+                    <a href="#">山竹</a>
+                    <a href="#">牛油果</a>
+                </div>
+            </div>
+            <div class="user">
+                <a href="mao_personal_account.html">个人中心</a>
+                <a href="z_shopping.html">购物车<span class="total_num">0</span></a>
+            </div>
+        </div>
+        <div class="header_nav">
+            <div class="left">
+                <a href="hu_goods_classify.html"><span class="all_list">全部分类</span></a>
+                <ul class="allList">
+                    <li>
+                        <img src="common/images/downnav4.png">
+                        <a href="#">新鲜水果</a>
+                        <div class="list_bg">
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="common/images/downnav5.png">
+                        <a href="#">生猛海鲜</a>
+                        <div class="list_bg">
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="common/images/downnav1.png">
+                        <a href="#">肉类家禽</a>
+                        <div class="list_bg">
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                            <div class="list_text">
+                                <h2>新鲜水果</h2>
+                                <dl>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                    <dd><a href="#">苹果</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li><img src="common/images/downnav2.png"><a href="#">蛋奶素食</a></li>
+                    <li><img src="common/images/downnav3.png"><a href="#">田园蔬菜</a></li>
+                    <li><img src="common/images/downnav6.png"><a href="#">零食酒水</a></li>
+                    <li><img src="common/images/downnav7.png"><a href="#">粮油杂货</a></li>
+                    <li><img src="common/images/downnav8.png"><a href="#">礼品卡劵</a></li>
+                    <li><img src="common/images/downnav9.png"><a href="#">家具用品</a></li>
+                </ul>
+            </div>
+            <ul class="right">
+                <li class="active"><a href="index.html">首页</a></li>
+                <li><a href="z_city.html">同城</a></li>
+                <li><a href="xiong_about.html">礼拜五</a></li>
+                <li><a href="mao_integral.html">积分商城</a></li>
+                <li><a href="mao_subject.html">导航+</a></li>
+            </ul>
+        </div>
+    </div>
+<!-- 导航条 结束 -->
+<!-- 当前位置导航 -->
+    <div class="samllNav">
+        <div class="myContainer">
+            <div class="navBar">
+                <ul>
+                    <li>您当前位置：</li>
+                    <li><a href="#">首页</a><span>></span></li>
+                    <li><a href="#">全部商品</a><span>></span></li>
+                    <li><a href="#">苹果</a><span>></span></li>
+                    <li><a href="#">阿克苏</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- 当前位置导航结束 -->
+<!-- 商品详情图片 -->
+    <div class="details">
+        <div class="myContainer">
+            <dl>
+                <dt>
+                    <div class="swiper-container bigImg">
+                        <!-- <div class="countDown">
+                            <P>距离开始还剩</P>
+                            <span class="day_time"></span>
+                            <i></i>
+                            <span class="hour_time"></span>
+                            <i>:</i>
+                            <span class="minute_time"></span>
+                            <i>:</i>
+                            <span class="second_time"></span>
+                        </div> -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="mark"></div>
+                                <img src="images/mao-details_big.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="mark"></div>
+                                <img src="images/mao-details_big.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="mark"></div>
+                                <img src="images/mao-details_big.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="mark"></div>
+                                <img src="images/mao-details_big.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="mark"></div>
+                                <img src="images/mao-details_big.jpg">
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <!-- <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div> -->
+                    </div>
+                    <div class="swiper-container productSwiper">
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/mao_details_small.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/mao_details_small.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/mao_details_small.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/mao_details_small.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/mao_details_small.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                </dt>
+                <dd>
+                    <div class="enlargeImag">
+                        <img src="images/mao-details_big.jpg">
+                    </div>
+                    <h3>新疆哈密瓜1500kg</h3>
+                    <div class="selfSupport">
+                        <span>全国</span>
+                        <span>礼拜五</span>
+                        <span>次日达</span>
+                        <span>自营</span>
+                    </div>
+                    <dl>
+                        <dt>
+                            <img src="images/mao_details_img1.png">
+                            <p>资深买家</p>
+                        </dt>
+                        <dd>
+                            <p>                         雀斑石榴持续热卖！云南蒙自石榴，原产波斯（今伊 朗）一带，公元前二世纪时传
+                            入我国。是中国三大石榴之一，粒大皮薄，汁多味甜爽口。雀斑石榴持续热卖！云
+                            南蒙自石榴，原产波斯（今伊朗）一带，公元前二世纪时传入我国。是中国三大石
+                            榴之一，粒大皮薄，汁多味甜爽口。
+                            </p>
+                        </dd>
+                    </dl>
+                    <h4>现价:￥20<span>原价：￥40</span></h4>
+                    <!-- 规格 -->
+                    <div class="spec">
+                        <p>请选择规格</p>
+                        <button type="button">500g</button>
+                        <button type="button">1000g</button>
+                        <button type="button">2000g</button>
+                    </div>
+                    <div class="number">
+                        <p>数量:</p>
+                        <button type="button" class="reduce">-</button>
+                        <input type="text" value="" class="count" AUTOCOMPLETE="off">
+                        <button type="button" class="add">+</button>
+                        <p>件</p>
+                        <span class="addTo">加入购物车</span>
+                        <a href="z_integralmessage.html"><span class="buy_now">立即购买</span></a>
+                    </div>
+                    <div class="enjoy">
+                        <p>
+                            <img src="images/mao_details_star_on.png">
+                            <img src="images/mao_details_star_off.png">
+                            <span>收藏此商品</span>
+                        </p>
+                        <p>
+                            <span>分享到:</span>
+                            <img src="images/mao_details_enjoy.png">
+                        </p>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+    </div>
+<!-- 商品详情图片结束 -->
+<!-- 商品详情 -->
+    <div class="particulars">
+        <div class="myContainer">
+            <ul class="title">
+                <li>商品详情</li>
+                <li>商品评价</li>
+            </ul>
+            <dl>
+                <dt>
+                    <h5>男士短衬衫</h5>
+                    <p>明水礼盒十分优秀，是送朋友，送亲人的不二选择。 <br>
+                        什么，您还不知道明水礼盒，今年过年不收礼，收礼只收明水礼盒，OUT了吧，赶紧买起礼盒送亲朋，送好友吧。 <br>
+                        完成交易，如有剩余库存，从新上架产品
+                    </p>
+                </dt>
+                <dd>
+                    <img src="images/mao_details_detailImg.png">
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <h5>男士短衬衫</h5>
+                    <p>明水礼盒十分优秀，是送朋友，送亲人的不二选择。 <br>
+                        什么，您还不知道明水礼盒，今年过年不收礼，收礼只收明水礼盒，OUT了吧，赶紧买起礼盒送亲朋，送好友吧。 <br>
+                        完成交易，如有剩余库存，从新上架产品
+                    </p>
+                </dt>
+                <dd>
+                    <img src="images/mao_details_detailImg.png">
+                </dd>
+            </dl>
+        </div>
+    </div>
+<!-- 商品详情结束 -->
+<!-- 商品评价 -->
+    <div class="evaluate">
+        <div class="myContainer">
+            <ul class="title">
+                <li>商品详情</li>
+                <li>商品评价</li>
+            </ul>
+            <div class="comment">
+                <dl>
+                    <dt>
+                        <img src="images/mao_details_comment_img1.png">
+                        <p>158536367765</p>
+                    </dt>
+                    <dd>
+                        <div class="like">
+                            <div class="star">
+                                <img src="images/mao_details_star_on.png">
+                                <img src="images/mao_details_star_on.png">
+                                <img src="images/mao_details_star_on.png">
+                                <img src="images/mao_details_star_on.png">
+                                <img src="images/mao_details_star_off.png">
+                            </div>
+                            <span>2016-08-22    20：45:01</span>
+                        </div>
+                        <p>帮同事买的，很不错，性价比高</p>
+                        <div class="swiper-container commentSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/mao_details_comment_img2.png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/mao_details_comment_img2.png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/mao_details_comment_img2.png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/mao_details_comment_img2.png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/mao_details_comment_img2.png">
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="images/mao_details_comment_img1.png">
+                        <p>158536367765</p>
+                    </dt>
+                    <dd>
+                        <div class="like">
+                            <div class="star">
+                                <img src="images/mao_details_star_on.png">
+                                <img src="images/mao_details_star_on.png">
+                                <img src="images/mao_details_star_on.png">
+                                <img src="images/mao_details_star_on.png">
+                                <img src="images/mao_details_star_off.png">
+                            </div>
+                            <span>2016-08-22    20：45:01</span>
+                        </div>
+                        <p>帮同事买的，很不错，性价比高</p>
+                        <div class="swiper-container commentSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/mao_details_comment_img2.png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/mao_details_comment_img2.png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/mao_details_comment_img2.png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/mao_details_comment_img2.png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/mao_details_comment_img2.png">
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="images/mao_details_comment_img1.png">
+                        <p>158536367765</p>
+                    </dt>
+                    <dd>
+                        <div class="like">
+                            <div class="star">
+                                <img src="images/mao_details_star_on.png">
+                                <img src="images/mao_details_star_on.png">
+                                <img src="images/mao_details_star_on.png">
+                                <img src="images/mao_details_star_on.png">
+                                <img src="images/mao_details_star_off.png">
+                            </div>
+                            <span>2016-08-22    20：45:01</span>
+                        </div>
+                        <p>帮同事买的，很不错，性价比高</p>
+                        <div class="swiper-container commentSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/mao_details_comment_img2.png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/mao_details_comment_img2.png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/mao_details_comment_img2.png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/mao_details_comment_img2.png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/mao_details_comment_img2.png">
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+<!-- 商品评价结束 -->
+<!-- 页脚一 -->
+    <div class="foot1">
+        <div class="myContainer">
+            <ul class="foot1_list">
+                <li><a href="hu_firiday.html"><img src="common/images/foot1_logo1.png">优鲜保障</a></li>
+                <li><img src="common/images/foot1_logo2.png">全程监控</li>
+                <li><img src="common/images/foot1_logo3.png">礼拜五特惠</li>
+                <li><img src="common/images/foot1_logo4.png">基地直供</li>
+                <li><img src="common/images/foot1_logo5.png">准时送达</li>
+            </ul>
+        </div>
+    </div>
+<!-- 页脚一 结束 -->
+
+<!-- 页脚二 -->
+    <div class="foot2">
+        <div class="myContainer">
+            <div class="foot2_box">
+                <div class="left">
+                    <img src="common/images/index_logo.png">
+                    <span>服务时间：08：-22:00</span>&nbsp;&nbsp;
+                    <span>400-800-8820</span>
+                </div>
+                <div class="code">
+                    <img src="common/images/foot2_code1.jpg">
+                    <p>礼拜五官方微信</p>
+                </div>
+                <div class="code">
+                    <img src="common/images/foot2_code1.jpg">
+                    <p>礼拜五官方微信</p>
+                </div>
+                <a href="xiong_about.html">
+                    <dl>
+                        <dt>关于礼拜五 </dt>
+                        <dd>新用户注册</dd>
+                        <dd>在线下单</dd>
+                        <dd>支付方式</dd>
+                    </dl>
+                </a>
+                <a href="xiong_about.html">
+                    <dl>
+                        <dt>关于礼拜五 </dt>
+                        <dd>新用户注册</dd>
+                        <dd>在线下单</dd>
+                        <dd>支付方式</dd>
+                    </dl>
+                </a>
+                <a href="xiong_about.html">
+                    <dl>
+                        <dt>关于礼拜五 </dt>
+                        <dd>新用户注册</dd>
+                        <dd>在线下单</dd>
+                        <dd>支付方式</dd>
+                    </dl>
+                </a>
+                <a href="xiong_about.html">
+                    <dl>
+                        <dt>关于礼拜五 </dt>
+                        <dd>新用户注册</dd>
+                        <dd>在线下单</dd>
+                        <dd>支付方式</dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+    </div>
+<!-- 页脚二 结束 -->
+
+<!-- 页脚三 -->
+    <div class="myContainer">
+        <div class="foot3">
+            <p>版权所有 © 礼拜五  保留所有权利 | 沪ICP备12042163 </p>
+            <p>礼拜五  纵享品质 </p>
+        </div>
+    </div>
+<!-- 页脚三 结束 -->
+
+<script src="common/js/jquery.min.js"></script>
+<script src="common/js/swiper-4.1.0.min.js"></script>
+<script src="common/js/bootstrap.min.js"></script>
+<script src="common/js/myScript.js"></script>
+<script src="js/hu_script.js"></script>
+<script src="js/mao_shoppingMall.js"></script>
+</body>
+</html>

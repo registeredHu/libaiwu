@@ -1,0 +1,19 @@
+.result {
+  width: 100%;
+  padding: 180px 0 200px;
+}
+.result .myContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.result img {
+  width: 100px;
+  height: 100px;
+}
+.result p {
+  font-size: 36px;
+  margin-top: 60px;
+  color: #f08200;
+  font-family: '微软雅黑';
+}
